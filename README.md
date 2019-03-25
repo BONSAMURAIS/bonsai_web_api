@@ -4,9 +4,9 @@
 This is a basic Flask app on which to build the different web-based modules for Bonsai.
 
 We foresee three modules:
-* a module that handles user interactions (requests for graphs, login, etc.)
+* a module that handles user interactions (requests for graphs, sessions, login, etc.)
 * a module that calculates LCA results
-* a module that converts DB extractions into matrices usable by the LCA calculation module
+* a module that converts triplestore DB extracts into two-dimensional matrices usable by the LCA calculation module
 
 An additional fourth module could handle users' submission of data to integrate the DB.
 
