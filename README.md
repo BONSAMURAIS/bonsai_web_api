@@ -1,8 +1,16 @@
 # Bonsai Web API
 
-
+## What is it?
 This is a basic Flask app on which to build the different web-based modules for Bonsai.
 
+We foresee three modules:
+* a module that handles user interactions (requests for graphs, login, etc.)
+* a module that calculates LCA results
+* a module that converts DB extractions into matrices usable by the LCA calculation module
+
+An additional fourth module could handle users' submission of data to integrate the DB.
+
+We do not yet have a working DB to receive triplestore queries from. However, we can use a dummy one in the meanwhile.
 
 # Install
 Clone the repository
@@ -33,7 +41,7 @@ installing bonsai_web_api
 
 # Run
 
-Linux/OSX
+Linux/MacOS
 
     export FLASK_APP=bonsai_web_api
     export FLASK_ENV=development
