@@ -1,12 +1,12 @@
-#Bonsai Web API
+# Bonsai Web API
 
 
 This is a basic Flask app on which to build the different web-based modules for Bonsai.
 
 
-#Install
-clone the repository
-git clone https://github.com/BONSAMURAIS/web-api
+# Install
+Clone the repository
+    git clone https://github.com/BONSAMURAIS/web-api
     
 
 Create a virtualenv and activate it::
