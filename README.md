@@ -12,7 +12,7 @@ An additional fourth module could handle users' submission of data to integrate 
 
 We do not yet have a working DB to receive triplestore queries from. However, we can use a dummy one in the meanwhile.
 
-# Install
+## Install
 Clone the repository
 
     git clone https://github.com/BONSAMURAIS/bonsai_web_api
@@ -27,7 +27,7 @@ Or on Windows cmd
     py -3 -m venv venv
     venv\Scripts\activate.bat
 
-# Install bonsai_web_api
+## Install bonsai_web_api
 
     pip install -e .
 
@@ -36,7 +36,7 @@ Or if you are using the master branch, install Flask from source before installi
     pip install -e ../..
     pip install -e .
 
-# Run
+## Run
 Linux/MacOS
 
     export FLASK_APP=bonsai_web_api
@@ -51,11 +51,11 @@ Or on Windows cmd
 
 Open http://127.0.0.1:5000 in a browser.
 
-# Test
+## Test
     pip install '.[test]'
     pytest
 
-# Run with coverage report
+## Run with coverage report
 
     coverage run -m pytest
     coverage report
