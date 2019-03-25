@@ -5,7 +5,8 @@ This is a basic Flask app on which to build the different web-based modules for 
 
 
 # Install
-Clone the repository
+Clone the repository::
+
     git clone https://github.com/BONSAMURAIS/web-api
     
 
