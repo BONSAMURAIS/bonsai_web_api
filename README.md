@@ -8,7 +8,7 @@ We foresee three modules:
 * a module that calculates LCA results
 * a module that converts triplestore DB extracts into two-dimensional matrices usable by the LCA calculation module
 
-An additional fourth module could handle users' submission of data to integrate the DB.
+An additional fourth module could handle users' submission of data to integrate into the DB.
 
 We do not yet have a working DB to receive triplestore queries from. However, we can use a dummy one in the meanwhile.
 
