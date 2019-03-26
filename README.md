@@ -10,6 +10,9 @@ We foresee three modules:
 
 We do not yet have a working DB to receive triplestore queries from. However, we can use a dummy one in the meanwhile.
 
+![alt text](https://github.com/BONSAMURAIS/bonsai_web_api/blob/master/static/pictures/bonsai_web_api_diagram.png)
+
+
 ## Install
 Clone the repository
 
