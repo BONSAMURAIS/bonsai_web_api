@@ -1,7 +1,9 @@
 <!doctype html>
+<html>
 <title>{% block title %}{% endblock %} - Bonsai Web Interface</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-<script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+<link rel="icon" href="https://bonsai.uno/wp-content/themes/bonsai/favicon.ico">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 
 
@@ -15,10 +17,10 @@
  
     <ul class="nav navbar-nav mx-auto">
         <form class="form-inline">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search for products" aria-label="Search">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search for products" aria-label="Search" id="search_input">
             <a class="navbar-brand" href="#">by</a>
             <ul class="navbar-nav mr-auto">
-                <select class="custom-select">
+                <select class="custom-select" id="search_type_select">
                     <option value="name" selected>Name</option>
                     <option value="type">Type</option>
                     <option value="id">Id</option>
@@ -26,15 +28,17 @@
             </ul>
              <a class="navbar-brand" href="#" style="margin-left:10px;" >limited to</a>
             <ul class="navbar-nav mr-auto">
-                <select class="custom-select">
-                    <option value="name" selected>10</option>
-                    <option value="type">50</option>
-                    <option value="id">100</option>
+                <select class="custom-select" id="search_lim_select">
+                    <option value="10" selected>10</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
                 </select>
             </ul>
             <a class="navbar-brand" href="#" style="margin-left:10px;">results</a>
 
-          <button class="btn btn-outline-success my-2 my-sm-0" style="margin-left:20px;" type="submit">Search</button>
+            <!--<button class="btn btn-outline-success my-2 my-sm-0" style="margin-left:20px;" type="submit">Search</button>-->
+            <button class="btn btn-outline-warning my-2 my-sm-0" style="margin-left:20px;" type="submit">Calculate</button>
+            <button type="button" class="btn btn-outline-danger" style="margin-left:20px;">Clear selection</button>
         </form>
     </ul>
     <div class="navbar-collapse collapse w-20 order-3 dual-collapse2">
@@ -70,3 +74,80 @@
   {% endfor %}
   {% block content %}{% endblock %}
 </section>
+
+
+ 
+<script>
+
+
+
+$('#search_input').keyup(function() {
+
+    
+    var search_val = $(this).val();
+    var search_type = $("#search_type_select").val();
+    var search_lim = $("#search_lim_select").val()
+    
+    $.when($.ajax({
+        url: "/rest/products/search_by_"+search_type+"/"+search_val,
+        dataType: 'json',
+        type: 'GET',
+        success : function(data) {
+           var json = data
+            return json
+            },
+        error: function(xhr, status, error){console.log(error)}})
+    ).then(function(json){
+        $("#table_search_results").find("tr:gt(0)").remove();
+        
+        for (var i = 0; i < json.length; i++) {
+            var newRowContent = "<tr><td>"+json[i]["item"]+"</td><td>"+json[i]["type"]+"</td><td>"+json[i]["year"]+"</td><td>"+json[i]["unit"]+"</td><td>"+json[i]["location"]+"</td><td>"+json[i]["id"]+"</td><td><button class='btn btn-outline-success my-2 my-sm-0' id="+json[i]["id"]+" onclick='add_row_to_table(this)'>Yes</button></td></tr>";
+            $("#table_search_results tbody").append(newRowContent);  
+            }
+        $(".btn-outline-success").click(function() {
+            if ( $(this).text()=="Yes"){
+                $(this).text("Selected");
+            }
+            else {
+                $(this).text("Yes");
+            };
+        });
+    })
+});
+    
+$(".btn-outline-success").click(function() {
+    if ( $(this).text()=="Yes"){
+        $(this).text("Selected");
+    }
+    else {
+        $(this).text("Yes");
+    };
+});
+    
+
+function add_row_to_table(btn){
+    var row_id = btn.id;
+    $("#table_search_results tr").each(function() {
+        if ($(this).find('td').eq(5).text() == row_id){
+            var tr = $(this).closest("tr").remove().clone();
+            tr.find('td').eq(6).html("<button class='btn btn-outline-danger my-2 my-sm-0' id='"+tr.find('td').eq(5).text()+"' onclick='remove_row_from_table(this)'>Yes</button>");
+            $("#table_products_calc tbody").append(tr);
+        };
+       
+        });
+};
+    
+function remove_row_from_table(btn){
+    var row_id = btn.id;
+    $("#table_products_calc tr").each(function() {
+        if ($(this).find('td').eq(5).text() == row_id){
+            var tr = $(this).closest("tr").remove().clone();
+        };
+       
+        });
+};
+
+
+</script>
+
+</html>

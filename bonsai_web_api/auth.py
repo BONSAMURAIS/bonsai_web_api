@@ -57,7 +57,7 @@ def login():
         if error is None:
             session.clear()
             session['user_id'] = user['id']
-            return redirect(url_for('index'))
+            return redirect(url_for('web_app.index'))
 
         flash(error)
 
@@ -84,7 +84,7 @@ def login_required(view):
     @functools.wraps(view)
     def wrapped_view(**kwargs):
         if g.user is None:
-            return redirect(url_for('auth.login'))
+            return redirect(url_for('auth.web_app.login'))
 
         return view(**kwargs)
 

@@ -1,21 +1,16 @@
 {% extends 'base.html' %}
 
-{% block header %}
-  <h3>{% block title %}Drag and drop products from your search query or pick products available in the database{% endblock %}</h3>
- 
-{% endblock %}
 
 {% block content %}
 
 
-
+<div class="container-fluid" >
 <div class="row">
-    <div class="col-md-6">
-        
-        
-        <div class="row mb-4 ml-4">
+    <div class="col-md-4">
+        <div class="row ml-1">
             <h4>Your search query.</h4>
-            <table class="table">
+            <div class="table-responsive">
+            <table class="table" id="table_search_results" style="font-size:12px;">
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -23,83 +18,90 @@
                         <th>Unit</th>
                         <th>Year</th>
                         <th>Location</th>
+                        <th>Id</th>
+                        <th>Select</th>
                     <tr>
                 </thead>
                 <tbody>
               {% for product in products %}
                 <tr>
-                    <td>{{ product.item }}</td>
-                    <td>{{ product.type }}</td>
-                    <td>{{ product.unit }}</td>
-                    <td>{{ product.year }}</td>
-                    <td>{{ product.location }}</td>
-
+                    <td>{{ product["item"] }}</td>
+                    <td>{{ product["type"] }}</td>
+                    <td>{{ product["unit"] }}</td>
+                    <td>{{ product["year"] }}</td>
+                    <td>{{ product["location"] }}</td>
+                    <td>{{ product["id"] }}</td>
+                    <td> <button class="btn btn-outline-success my-2 my-sm-0" id="{{ product["id"] }}" onclick='add_row_to_table(this)'>Yes</button> </td>
                 </tr>
                 {% endfor%}
 
 
               </tbody>
             </table>
+            </div>
         </div>
         
-        <div class="row mb-4 ml-4">
-            <h4>Other products available in the database.</h4>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Type</th>
-                        <th>Unit</th>
-                        <th>Year</th>
-                        <th>Location</th>
-                    <tr>
-                </thead>
-                <tbody>
-              {% for product in products %}
-                <tr>
-                    <td>{{ product.item }}</td>
-                    <td>{{ product.type }}</td>
-                    <td>{{ product.unit }}</td>
-                    <td>{{ product.year }}</td>
-                    <td>{{ product.location }}</td>
-
-                </tr>
-                {% endfor%}
-
-
-              </tbody>
-            </table>
-        </div>
+        
         
         
     </div>
-    <div class="col-md-6">
-        <h4>Products to calculate.</h4>
-        <table class="table">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Unit</th>
-                <th>Year</th>
-                <th>Location</th>
-            <tr>
-        </thead>
-        <tbody>
-      {% for product in products %}
-        <tr>
-            <td>{{ product.item }}</td>
-            <td>{{ product.type }}</td>
-            <td>{{ product.unit }}</td>
-            <td>{{ product.year }}</td>
-            <td>{{ product.location }}</td>
+    <div class="col-md-4">
+        <div class="row ml-1">
+            <h4>Products to calculate.</h4><br>
+             <div class="table-responsive">
+            <table class="table" id="table_products_calc" style="font-size:12px;">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Unit</th>
+                        <th>Year</th>
+                        <th>Location</th>
+                        <th>Id</th>
+                        <th>Remove</th>
+                    <tr>
+                </thead>
+                <tbody>
 
-        </tr>
-        {% endfor%}
+              </tbody>
+            </table>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+    <div class="col-md-4">
+        <div class="row ml-1">
+            <h4>Results.</h4>
+            <div class="table-responsive">
+            <table class="table" style="font-size:12px;">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Unit</th>
+                        <th>Year</th>
+                        <th>Location</th>
+                    <tr>
+                </thead>
+                <tbody>
 
-
-      </tbody>
-    </table>
+              </tbody>
+            </table>
+            </div>
+        </div>
+        
+        <div class="row ml-2">
+            <h4>Charts.</h4>
+            
+        </div>
+        
+        <div class="row ml-2">
+            <h4>Data export.</h4>
+            
+        </div>
+        
         
     </div>
     
@@ -108,6 +110,8 @@
 
     
 </div>
+</div>
+
 
 
 {% endblock %}
