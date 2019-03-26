@@ -41,8 +41,15 @@ Or if you are using the master branch, install Flask from source before installi
 ## Run
 Linux/MacOS
 
+Set the environment variables
+
     export FLASK_APP=bonsai_web_api
     export FLASK_ENV=development
+
+Initalize the databases if first use
+    flask init-db
+    
+Run local server
     flask run
 
 Or on Windows cmd
