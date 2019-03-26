@@ -1,8 +1,8 @@
 <!doctype html>
-<title>{% block title %}{% endblock %} - Bonsai Web API</title>
+<title>{% block title %}{% endblock %} - Bonsai Web Interface</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 <nav>
-  <h1>Bonsai Web API</h1>
+  <h1>Bonsai Web Interface</h1>
   <ul>
     {% if g.user %}
       <li><span>{{ g.user['username'] }}</span>

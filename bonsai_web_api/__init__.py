@@ -24,10 +24,10 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-    # a simple page that says hello
-    @app.route('/hello')
-    def hello():
-        return 'Hello, World!'
+    #Register the products blueprint 
+    from . import web_app
+    app.register_blueprint(web_app.bp)
+    
     
     #Register the mySQL database
     from . import db
@@ -37,10 +37,11 @@ def create_app(test_config=None):
     from . import auth
     app.register_blueprint(auth.bp)
     
-    #Register the blog blueprint
-    from . import blog
-    app.register_blueprint(blog.bp)
-    app.add_url_rule('/', endpoint='index')
+    
+    
+    #Register the products REST blueprint
+    from . import REST_API
+    app.register_blueprint(REST_API.bp)
     
 
     return app

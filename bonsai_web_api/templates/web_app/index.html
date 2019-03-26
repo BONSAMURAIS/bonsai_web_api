@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Some of the products currently available in the database{% endblock %}</h1>
+ 
+{% endblock %}
+
+{% block content %}
+  {% for product in products %}
+    <article class="post">
+      <header>
+        <div>
+          <h1>{{ product['item'] }}</h1>
+          <div class="about">of type {{ product['type'] }} from {{ product['year'] }} with the geographical scope of {{ product['location'] }}</div>
+        </div>
+      </header>
+    </article>
+    {% if not loop.last %}
+      <hr>
+    {% endif %}
+  {% endfor %}
+{% endblock %}
+
