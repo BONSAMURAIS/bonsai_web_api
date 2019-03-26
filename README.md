@@ -47,7 +47,7 @@ Linux/MacOS
 
 Or on Windows cmd
 
-    set FLASK_APP=flaskr
+    set FLASK_APP=bonsai_web_api
     set FLASK_ENV=development
     flask run
 
