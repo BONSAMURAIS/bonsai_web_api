@@ -4,11 +4,9 @@ This is a basic Flask app on which to build the different web-based modules for 
 
 We foresee three modules:
 
-* a module that handles user interactions (requests for graphs, sessions, login, etc.)
-* a module that calculates LCA results
-* a module that converts triplestore DB extracts into two-dimensional matrices usable by the LCA calculation module
-
-An additional fourth module could handle users' submission of data to integrate into the DB.
+* a web application that handles interactions with users (requests for graphs, sessions, login, etc.)
+* a REST API that serves both the web application and direct power requests on one side, and queries the triplestore DB on the other side,
+* and a module that calculates LCA results upon requests from the REST API.
 
 We do not yet have a working DB to receive triplestore queries from. However, we can use a dummy one in the meanwhile.
 
