@@ -1,23 +1,115 @@
 {% extends 'base.html' %}
 
 {% block header %}
-  <h1>{% block title %}Some of the products currently available in the database{% endblock %}</h1>
+  <h3>{% block title %}Drag and drop products from your search query or pick products available in the database{% endblock %}</h3>
  
 {% endblock %}
 
 {% block content %}
-  {% for product in products %}
-    <article class="post">
-      <header>
-        <div>
-          <h1>{{ product['item'] }}</h1>
-          <div class="about">of type {{ product['type'] }} from {{ product['year'] }} with the geographical scope of {{ product['location'] }}</div>
+
+
+
+<div class="row">
+    <div class="col-md-6">
+        
+        
+        <div class="row mb-4 ml-4">
+            <h4>Your search query.</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Unit</th>
+                        <th>Year</th>
+                        <th>Location</th>
+                    <tr>
+                </thead>
+                <tbody>
+              {% for product in products %}
+                <tr>
+                    <td>{{ product.item }}</td>
+                    <td>{{ product.type }}</td>
+                    <td>{{ product.unit }}</td>
+                    <td>{{ product.year }}</td>
+                    <td>{{ product.location }}</td>
+
+                </tr>
+                {% endfor%}
+
+
+              </tbody>
+            </table>
         </div>
-      </header>
-    </article>
-    {% if not loop.last %}
-      <hr>
-    {% endif %}
-  {% endfor %}
+        
+        <div class="row mb-4 ml-4">
+            <h4>Other products available in the database.</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Unit</th>
+                        <th>Year</th>
+                        <th>Location</th>
+                    <tr>
+                </thead>
+                <tbody>
+              {% for product in products %}
+                <tr>
+                    <td>{{ product.item }}</td>
+                    <td>{{ product.type }}</td>
+                    <td>{{ product.unit }}</td>
+                    <td>{{ product.year }}</td>
+                    <td>{{ product.location }}</td>
+
+                </tr>
+                {% endfor%}
+
+
+              </tbody>
+            </table>
+        </div>
+        
+        
+    </div>
+    <div class="col-md-6">
+        <h4>Products to calculate.</h4>
+        <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Unit</th>
+                <th>Year</th>
+                <th>Location</th>
+            <tr>
+        </thead>
+        <tbody>
+      {% for product in products %}
+        <tr>
+            <td>{{ product.item }}</td>
+            <td>{{ product.type }}</td>
+            <td>{{ product.unit }}</td>
+            <td>{{ product.year }}</td>
+            <td>{{ product.location }}</td>
+
+        </tr>
+        {% endfor%}
+
+
+      </tbody>
+    </table>
+        
+    </div>
+    
+    
+    
+
+    
+</div>
+
+
 {% endblock %}
+
 
