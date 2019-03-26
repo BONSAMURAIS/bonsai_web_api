@@ -2,10 +2,11 @@
 ## What is it?
 This is a basic Flask app on which to build the different web-based modules for Bonsai.
 
-We foresee three modules:
+We foresee four inter-related applications:
 
 * a web application that handles interactions with users (requests for graphs, sessions, login, etc.)
-* a REST API that serves both the web application and direct power requests on one side, and queries the triplestore DB on the other side,
+* a REST API that serves both the web application and direct REST requests on one side, and queries the graph DB on the other side,
+* a module that receive the whole graph database at server start, converts it into a two dimensional matrix and cache it for ulterior requests,
 * and a module that calculates LCA results upon requests from the REST API.
 
 We do not yet have a working DB to receive triplestore queries from. However, we can use a dummy one in the meanwhile.
