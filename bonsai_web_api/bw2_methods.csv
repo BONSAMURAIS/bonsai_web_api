@@ -1,0 +1,719 @@
+name_method,name_impact,unit
+CML 2001,"acidification potential, average European",kg SO2-Eq
+CML 2001,"acidification potential, generic",kg SO2-Eq
+CML 2001,"climate change, GWP 100a",kg CO2-Eq
+CML 2001,"climate change, GWP 20a",kg CO2-Eq
+CML 2001,"climate change, GWP 500a",kg CO2-Eq
+CML 2001,"climate change, lower limit of net GWP",kg CO2-Eq
+CML 2001,"climate change, upper limit of net GWP",kg CO2-Eq
+CML 2001,"eutrophication potential, average European",kg NOx-Eq
+CML 2001,"eutrophication potential, generic",kg PO4-Eq
+CML 2001,"freshwater aquatic ecotoxicity, FAETP 100a","kg 1,4-DCB-Eq"
+CML 2001,"freshwater aquatic ecotoxicity, FAETP 20a","kg 1,4-DCB-Eq"
+CML 2001,"freshwater aquatic ecotoxicity, FAETP 500a","kg 1,4-DCB-Eq"
+CML 2001,"freshwater aquatic ecotoxicity, FAETP infinite","kg 1,4-DCB-Eq"
+CML 2001,"freshwater sediment ecotoxicity, FSETP 100a","kg 1,4-DCB-Eq"
+CML 2001,"freshwater sediment ecotoxicity, FSETP 20a","kg 1,4-DCB-Eq"
+CML 2001," freshwater sediment ecotoxicity, FSETP 500a","kg 1,4-DCB-Eq"
+CML 2001," freshwater sediment ecotoxicity, FSETP infinite","kg 1,4-DCB-Eq"
+CML 2001," human toxicity, HTP 100a","kg 1,4-DCB-Eq"
+CML 2001," human toxicity, HTP 20a","kg 1,4-DCB-Eq"
+CML 2001," human toxicity, HTP 500a","kg 1,4-DCB-Eq"
+CML 2001," human toxicity, HTP infinite","kg 1,4-DCB-Eq"
+CML 2001," ionising radiation, ionising radiation",DALYs
+CML 2001," land use, competition",square meter-year
+CML 2001," malodours air, malodours air",m3 air
+CML 2001," marine aquatic ecotoxicity, MAETP 100a","kg 1,4-DCB-Eq"
+CML 2001," marine aquatic ecotoxicity, MAETP 20a","kg 1,4-DCB-Eq"
+CML 2001," marine aquatic ecotoxicity, MAETP 500a","kg 1,4-DCB-Eq"
+CML 2001," marine aquatic ecotoxicity, MAETP infinite","kg 1,4-DCB-Eq"
+CML 2001," marine sediment ecotoxicity, MSETP 100a","kg 1,4-DCB-Eq"
+CML 2001," marine sediment ecotoxicity, MSETP 20a","kg 1,4-DCB-Eq"
+CML 2001," marine sediment ecotoxicity, MSETP 500a","kg 1,4-DCB-Eq"
+CML 2001," marine sediment ecotoxicity, MSETP infinite","kg 1,4-DCB-Eq"
+CML 2001," photochemical oxidation summer smog, EBIR",kg formed ozone
+CML 2001," photochemical oxidation summer smog, high NOx POCP",kg ethylene-Eq
+CML 2001," photochemical oxidation summer smog, low NOx POCP",kg ethylene-Eq
+CML 2001," photochemical oxidation summer smog, MIR",kg formed ozone
+CML 2001," photochemical oxidation summer smog, MOIR",kg formed ozone
+CML 2001," resources, depletion of abiotic resources",kg antimony-Eq
+CML 2001," stratospheric ozone depletion, ODP 10a",kg CFC-11-Eq
+CML 2001," stratospheric ozone depletion, ODP 15a",kg CFC-11-Eq
+CML 2001," stratospheric ozone depletion, ODP 20a",kg CFC-11-Eq
+CML 2001," stratospheric ozone depletion, ODP 25a",kg CFC-11-Eq
+CML 2001," stratospheric ozone depletion, ODP 30a",kg CFC-11-Eq
+CML 2001," stratospheric ozone depletion, ODP 40a",kg CFC-11-Eq
+CML 2001," stratospheric ozone depletion, ODP 5a",kg CFC-11-Eq
+CML 2001," stratospheric ozone depletion, ODP steady state",kg CFC-11-Eq
+CML 2001," terrestrial ecotoxicity, TAETP 100a","kg 1,4-DCB-Eq"
+CML 2001," terrestrial ecotoxicity, TAETP 20a","kg 1,4-DCB-Eq"
+CML 2001," terrestrial ecotoxicity, TAETP 500a","kg 1,4-DCB-Eq"
+CML 2001," terrestrial ecotoxicity, TAETP infinite","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," acidification potential w/o LT, average European w/o LT",kg SO2-Eq
+CML 2001 w/o LT," acidification potential w/o LT, generic w/o LT",kg SO2-Eq
+CML 2001 w/o LT," climate change w/o LT, GWP 100a w/o LT",kg CO2-Eq
+CML 2001 w/o LT," climate change w/o LT, GWP 20a w/o LT",kg CO2-Eq
+CML 2001 w/o LT," climate change w/o LT, GWP 500a w/o LT",kg CO2-Eq
+CML 2001 w/o LT," climate change w/o LT, lower limit of net GWP w/o LT",kg CO2-Eq
+CML 2001 w/o LT," climate change w/o LT, upper limit of net GWP w/o LT",kg CO2-Eq
+CML 2001 w/o LT," eutrophication potential w/o LT, average European w/o LT",kg NOx-Eq
+CML 2001 w/o LT," eutrophication potential w/o LT, generic w/o LT",kg PO4-Eq
+CML 2001 w/o LT," freshwater aquatic ecotoxicity w/o LT, FAETP 100a w/o LT","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," freshwater aquatic ecotoxicity w/o LT, FAETP 20a w/o LT","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," freshwater aquatic ecotoxicity w/o LT, FAETP 500a w/o LT","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," freshwater aquatic ecotoxicity w/o LT, FAETP infinite w/o L","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," freshwater sediment ecotoxicity w/o LT, FSETP 100a w/o LT","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," freshwater sediment ecotoxicity w/o LT, FSETP 20a w/o LT","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," freshwater sediment ecotoxicity w/o LT, FSETP 500a w/o LT","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," freshwater sediment ecotoxicity w/o LT, FSETP infinite w/o ","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," human toxicity w/o LT, HTP 100a w/o LT","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," human toxicity w/o LT, HTP 20a w/o LT","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," human toxicity w/o LT, HTP 500a w/o LT","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," human toxicity w/o LT, HTP infinite w/o LT","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," ionising radiation w/o LT, ionising radiation w/o LT",DALYs
+CML 2001 w/o LT," land use w/o LT, competition w/o LT",square meter-year
+CML 2001 w/o LT," malodours air w/o LT, malodours air w/o LT",m3 air
+CML 2001 w/o LT," marine aquatic ecotoxicity w/o LT, MAETP 100a w/o LT","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," marine aquatic ecotoxicity w/o LT, MAETP 20a w/o LT","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," marine aquatic ecotoxicity w/o LT, MAETP 500a w/o LT","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," marine aquatic ecotoxicity w/o LT, MAETP infinite w/o LT","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," marine sediment ecotoxicity w/o LT, MSETP 100a w/o LT","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," marine sediment ecotoxicity w/o LT, MSETP 20a w/o LT","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," marine sediment ecotoxicity w/o LT, MSETP 500a w/o LT","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," marine sediment ecotoxicity w/o LT, MSETP infinite w/o LT","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," photochemical oxidation w/o LT, EBIR w/o LT",kg formed ozone
+CML 2001 w/o LT," photochemical oxidation w/o LT, high NOx POCP w/o LT",kg ethylene-Eq
+CML 2001 w/o LT," photochemical oxidation w/o LT, low NOx POCP w/o LT",kg ethylene-Eq
+CML 2001 w/o LT," photochemical oxidation w/o LT, MIR w/o LT",kg formed ozone
+CML 2001 w/o LT," photochemical oxidation w/o LT, MOIR w/o LT",kg formed ozone
+CML 2001 w/o LT," resources w/o LT, depletion of abiotic resources w/o LT",kg antimony-Eq
+CML 2001 w/o LT," stratospheric ozone depletion w/o LT, ODP 10a w/o LT",kg CFC-11-Eq
+CML 2001 w/o LT," stratospheric ozone depletion w/o LT, ODP 15a w/o LT",kg CFC-11-Eq
+CML 2001 w/o LT," stratospheric ozone depletion w/o LT, ODP 20a w/o LT",kg CFC-11-Eq
+CML 2001 w/o LT," stratospheric ozone depletion w/o LT, ODP 25a w/o LT",kg CFC-11-Eq
+CML 2001 w/o LT," stratospheric ozone depletion w/o LT, ODP 30a w/o LT",kg CFC-11-Eq
+CML 2001 w/o LT," stratospheric ozone depletion w/o LT, ODP 40a w/o LT",kg CFC-11-Eq
+CML 2001 w/o LT," stratospheric ozone depletion w/o LT, ODP 5a w/o LT",kg CFC-11-Eq
+CML 2001 w/o LT," stratospheric ozone depletion w/o LT, ODP steady state w/o ",kg CFC-11-Eq
+CML 2001 w/o LT," terrestrial ecotoxicity w/o LT, TAETP 100a w/o LT","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," terrestrial ecotoxicity w/o LT, TAETP 20a w/o LT","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," terrestrial ecotoxicity w/o LT, TAETP 500a w/o LT","kg 1,4-DCB-Eq"
+CML 2001 w/o LT," terrestrial ecotoxicity w/o LT, TAETP infinite w/o LT","kg 1,4-DCB-Eq"
+cumulative energy demand," biomass, renewable energy resources, biomass",MJ-Eq
+cumulative energy demand," fossil, non-renewable energy resources, fossil",MJ-Eq
+cumulative energy demand," geothermal, renewable energy resources, geothermal, convert",MJ-Eq
+cumulative energy demand," nuclear, non-renewable energy resources, nuclear",MJ-Eq
+cumulative energy demand," primary forest, non-renewable energy resources, primary for",MJ-Eq
+cumulative energy demand," solar, renewable energy resources, solar, converted",MJ-Eq
+cumulative energy demand," water, renewable energy resources, potential in barrage wat",MJ-Eq
+cumulative energy demand," wind, renewable energy resources, kinetic in wind, converte",MJ-Eq
+cumulative exergy demand," biomass, renewable energy resources, biomass",MJ-Eq
+cumulative exergy demand," fossil, non-renewable energy resources, fossil",MJ-Eq
+cumulative exergy demand," metals, non-renewable material resources, metals",MJ-Eq
+cumulative exergy demand," minerals, non-renewable material resources, minerals",MJ-Eq
+cumulative exergy demand," nuclear, non-renewable energy resources, nuclear",MJ-Eq
+cumulative exergy demand," primary forest, non-renewable energy resources, primary for",MJ-Eq
+cumulative exergy demand," solar, renewable energy resources, solar, converted",MJ-Eq
+cumulative exergy demand," water, renewable energy resources, potential in barrage wat",MJ-Eq
+cumulative exergy demand," water resources, renewable material resources, water",MJ-Eq
+cumulative exergy demand," wind, renewable energy resources, kinetic in wind, converte",MJ-Eq
+eco-indicator 99," E,E, ecosystem quality, acidification & eutrophication",points
+eco-indicator 99," E,E, ecosystem quality, ecotoxicity",points
+eco-indicator 99," E,E, ecosystem quality, land occupation",points
+eco-indicator 99," E,E, ecosystem quality, total",points
+eco-indicator 99," E,E, human health, carcinogenics",points
+eco-indicator 99," E,E, human health, climate change",points
+eco-indicator 99," E,E, human health, ionising radiation",points
+eco-indicator 99," E,E, human health, ozone layer depletion",points
+eco-indicator 99," E,E, human health, respiratory effects",points
+eco-indicator 99," E,E, human health, total",points
+eco-indicator 99," E,E, resources, fossil fuels",points
+eco-indicator 99," E,E, resources, mineral extraction",points
+eco-indicator 99," E,E, resources, total",points
+eco-indicator 99," E,E, total, total",points
+eco-indicator 99," E,E w/o LT, ecosystem quality w/o LT, acidification & eutro",points
+eco-indicator 99," E,E w/o LT, ecosystem quality w/o LT, ecotoxicity w/o LT",points
+eco-indicator 99," E,E w/o LT, ecosystem quality w/o LT, land occupation w/o L",points
+eco-indicator 99," E,E w/o LT, ecosystem quality w/o LT, total w/o LT",points
+eco-indicator 99," E,E w/o LT, human health w/o LT, carcinogenics w/o LT",points
+eco-indicator 99," E,E w/o LT, human health w/o LT, climate change w/o LT",points
+eco-indicator 99," E,E w/o LT, human health w/o LT, ionising radiation w/o LT",points
+eco-indicator 99," E,E w/o LT, human health w/o LT, ozone layer depletion w/o ",points
+eco-indicator 99," E,E w/o LT, human health w/o LT, respiratory effects w/o LT",points
+eco-indicator 99," E,E w/o LT, human health w/o LT, total w/o LT",points
+eco-indicator 99," E,E w/o LT, resources w/o LT, fossil fuels w/o LT",points
+eco-indicator 99," E,E w/o LT, resources w/o LT, mineral extraction w/o LT",points
+eco-indicator 99," E,E w/o LT, resources w/o LT, total w/o LT",points
+eco-indicator 99," E,E w/o LT, total w/o LT, total w/o LT",points
+eco-indicator 99," H,A, ecosystem quality, acidification & eutrophication",points
+eco-indicator 99," H,A, ecosystem quality, ecotoxicity",points
+eco-indicator 99," H,A, ecosystem quality, land occupation",points
+eco-indicator 99," H,A, ecosystem quality, total",points
+eco-indicator 99," H,A, human health, carcinogenics",points
+eco-indicator 99," H,A, human health, climate change",points
+eco-indicator 99," H,A, human health, ionising radiation",points
+eco-indicator 99," H,A, human health, ozone layer depletion",points
+eco-indicator 99," H,A, human health, respiratory effects",points
+eco-indicator 99," H,A, human health, total",points
+eco-indicator 99," H,A, resources, fossil fuels",points
+eco-indicator 99," H,A, resources, mineral extraction",points
+eco-indicator 99," H,A, resources, total",points
+eco-indicator 99," H,A, total, total",points
+eco-indicator 99," H,A w/o LT, ecosystem quality w/o LT, acidification & eutro",points
+eco-indicator 99," H,A w/o LT, ecosystem quality w/o LT, ecotoxicity w/o LT",points
+eco-indicator 99," H,A w/o LT, ecosystem quality w/o LT, land occupation w/o L",points
+eco-indicator 99," H,A w/o LT, ecosystem quality w/o LT, total w/o LT",points
+eco-indicator 99," H,A w/o LT, human health w/o LT, carcinogenics w/o LT",points
+eco-indicator 99," H,A w/o LT, human health w/o LT, climate change w/o LT",points
+eco-indicator 99," H,A w/o LT, human health w/o LT, ionising radiation w/o LT",points
+eco-indicator 99," H,A w/o LT, human health w/o LT, ozone layer depletion w/o ",points
+eco-indicator 99," H,A w/o LT, human health w/o LT, respiratory effects w/o LT",points
+eco-indicator 99," H,A w/o LT, human health w/o LT, total w/o LT",points
+eco-indicator 99," H,A w/o LT, resources w/o LT, fossil fuels w/o LT",points
+eco-indicator 99," H,A w/o LT, resources w/o LT, mineral extraction w/o LT",points
+eco-indicator 99," H,A w/o LT, resources w/o LT, total w/o LT",points
+eco-indicator 99," H,A w/o LT, total w/o LT, total w/o LT",points
+eco-indicator 99," I,I, ecosystem quality, acidification & eutrophication",points
+eco-indicator 99," I,I, ecosystem quality, ecotoxicity",points
+eco-indicator 99," I,I, ecosystem quality, land occupation",points
+eco-indicator 99," I,I, ecosystem quality, total",points
+eco-indicator 99," I,I, human health, carcinogenics",points
+eco-indicator 99," I,I, human health, climate change",points
+eco-indicator 99," I,I, human health, ionising radiation",points
+eco-indicator 99," I,I, human health, ozone layer depletion",points
+eco-indicator 99," I,I, human health, respiratory effects",points
+eco-indicator 99," I,I, human health, total",points
+eco-indicator 99," I,I, resources, mineral extraction",points
+eco-indicator 99," I,I, resources, total",points
+eco-indicator 99," I,I, total, total",points
+ecological footprint," total, CO2",square meter-year
+ecological footprint," total, land occupation",square meter-year
+ecological footprint," total, nuclear",square meter-year
+ecological footprint," total, total",square meter-year
+ecological scarcity 1997," total, deposited waste",UBP
+ecological scarcity 1997," total, emission into air",UBP
+ecological scarcity 1997," total, emission into top-soil/groundwater",UBP
+ecological scarcity 1997," total, emission into water",UBP
+ecological scarcity 1997," total, radioactive waste",UBP
+ecological scarcity 1997," total, total",UBP
+ecological scarcity 1997," total, use of energy resources",UBP
+ecological scarcity 2006," total, deposited waste",UBP
+ecological scarcity 2006," total, emission into air",UBP
+ecological scarcity 2006," total, emission into groundwater",UBP
+ecological scarcity 2006," total, emission into surface water",UBP
+ecological scarcity 2006," total, emission into top soil",UBP
+ecological scarcity 2006," total, energy resources",UBP
+ecological scarcity 2006," total, natural resources",UBP
+ecological scarcity 2006," total, total",UBP
+ecological scarcity 2013," carcinogenic substances into air, total",UBP
+ecological scarcity 2013," energy resources, total",UBP
+ecological scarcity 2013," global warming, total",UBP
+ecological scarcity 2013," heavy metals into air, total",UBP
+ecological scarcity 2013," heavy metals into soil, total",UBP
+ecological scarcity 2013," heavy metals into water, total",UBP
+ecological scarcity 2013," land use, total",UBP
+ecological scarcity 2013," main air pollutants and PM, total",UBP
+ecological scarcity 2013," mineral resources, total",UBP
+ecological scarcity 2013," non radioactive waste to deposit, total",UBP
+ecological scarcity 2013," ozone layer depletion, total",UBP
+ecological scarcity 2013," pesticides into soil, total",UBP
+ecological scarcity 2013," POP into water, total",UBP
+ecological scarcity 2013," radioactive substances into air, total",UBP
+ecological scarcity 2013," radioactive substances into water, total",UBP
+ecological scarcity 2013," radioactive waste to deposit, total",UBP
+ecological scarcity 2013," total, total",UBP
+ecological scarcity 2013," water pollutants, total",UBP
+ecological scarcity 2013," water resources, total",UBP
+ecological scarcity 2013 no LT," carcinogenic substances into air, total",UBP
+ecological scarcity 2013 no LT," global warming, total",UBP
+ecological scarcity 2013 no LT," heavy metals into air, total",UBP
+ecological scarcity 2013 no LT," heavy metals into soil, total",UBP
+ecological scarcity 2013 no LT," heavy metals into water, total",UBP
+ecological scarcity 2013 no LT," main air pollutants and PM, total",UBP
+ecological scarcity 2013 no LT," non radioactive waste to deposit, total",UBP
+ecological scarcity 2013 no LT," ozone layer depletion, total",UBP
+ecological scarcity 2013 no LT," pesticides into soil, total",UBP
+ecological scarcity 2013 no LT," POP into water, total",UBP
+ecological scarcity 2013 no LT," radioactive substances into air, total",UBP
+ecological scarcity 2013 no LT," radioactive substances into water, total",UBP
+ecological scarcity 2013 no LT," total, total",UBP
+ecological scarcity 2013 no LT," water pollutants, total",UBP
+ecological scarcity 2013 no LT," water resources, total",UBP
+ecosystem damage potential," total, linear, land occupation",points
+ecosystem damage potential," total, linear, land transformation",points
+ecosystem damage potential," total, linear, land use, total",points
+EDIP," environmental impact, acidification",kg SO2-Eq
+EDIP," environmental impact, ecotoxicity, acute, in water",m3 water
+EDIP," environmental impact, ecotoxicity, chronic, in soil",m3 soil
+EDIP," environmental impact, ecotoxicity, chronic, in water",m3 water
+EDIP," environmental impact, ecotoxicity, in sewage treatment plan",m3 waste water
+EDIP," environmental impact, global warming, GWP 100a",kg CO2-Eq
+EDIP," environmental impact, global warming, GWP 20a",kg CO2-Eq
+EDIP," environmental impact, global warming, GWP 500a",kg CO2-Eq
+EDIP," environmental impact, human toxicity, via air",m3 air
+EDIP," environmental impact, human toxicity, via soil",m3 soil
+EDIP," environmental impact, human toxicity, via surface water",m3 water
+EDIP," environmental impact, land filling, bulk waste",kg waste
+EDIP," environmental impact, land filling, hazardous waste",kg waste
+EDIP," environmental impact, land filling, radioactive waste",kg waste
+EDIP," environmental impact, land filling, slag and ashes",kg waste
+EDIP," environmental impact, nutrient enrichment, combined potenti",kg NO3-
+EDIP," environmental impact, nutrient enrichment, separate N poten",kg N
+EDIP," environmental impact, nutrient enrichment, separate P poten",kg P
+EDIP," environmental impact, photochemical ozone formation, high N",kg ethylene-Eq
+EDIP," environmental impact, photochemical ozone formation, low NO",kg ethylene-Eq
+EDIP," environmental impact, stratospheric ozone depletion, ODP 10",kg CFC-11-Eq
+EDIP," environmental impact, stratospheric ozone depletion, ODP 20",kg CFC-11-Eq
+EDIP," environmental impact, stratospheric ozone depletion, ODP 5a",kg CFC-11-Eq
+EDIP," environmental impact, stratospheric ozone depletion, ODP st",kg CFC-11-Eq
+EDIP," resource consumption, non-renewable resources, aluminium",kilogram
+EDIP," resource consumption, non-renewable resources, antimony",kilogram
+EDIP," resource consumption, non-renewable resources, brown coal",kilogram
+EDIP," resource consumption, non-renewable resources, cadmium",kilogram
+EDIP," resource consumption, non-renewable resources, cerium",kilogram
+EDIP," resource consumption, non-renewable resources, coal",kilogram
+EDIP," resource consumption, non-renewable resources, cobalt",kilogram
+EDIP," resource consumption, non-renewable resources, copper",kilogram
+EDIP," resource consumption, non-renewable resources, gold",kilogram
+EDIP," resource consumption, non-renewable resources, iron",kilogram
+EDIP," resource consumption, non-renewable resources, lanthanum",kilogram
+EDIP," resource consumption, non-renewable resources, lead",kilogram
+EDIP," resource consumption, non-renewable resources, manganese",kilogram
+EDIP," resource consumption, non-renewable resources, mercury",kilogram
+EDIP," resource consumption, non-renewable resources, molybdenum",kilogram
+EDIP," resource consumption, non-renewable resources, natural gas",kilogram
+EDIP," resource consumption, non-renewable resources, nickel",kilogram
+EDIP," resource consumption, non-renewable resources, oil",kilogram
+EDIP," resource consumption, non-renewable resources, palladium",kilogram
+EDIP," resource consumption, non-renewable resources, platinum",kilogram
+EDIP," resource consumption, non-renewable resources, silver",kilogram
+EDIP," resource consumption, non-renewable resources, tantalum",kilogram
+EDIP," resource consumption, non-renewable resources, tin",kilogram
+EDIP," resource consumption, non-renewable resources, zinc",kilogram
+EDIP," resource consumption, renewable resources, wood",cubic meter
+EDIP w/o LT," environmental impact w/o LT, acidification w/o LT",kg SO2-Eq
+EDIP w/o LT," environmental impact w/o LT, ecotoxicity, acute, in water w",m3 water
+EDIP w/o LT," environmental impact w/o LT, ecotoxicity, chronic, in soil ",m3 soil
+EDIP w/o LT," environmental impact w/o LT, ecotoxicity, chronic, in water",m3 water
+EDIP w/o LT," environmental impact w/o LT, ecotoxicity, in sewage treatme",m3 waste water
+EDIP w/o LT," environmental impact w/o LT, global warming, GWP 100a w/o L",kg CO2-Eq
+EDIP w/o LT," environmental impact w/o LT, global warming, GWP 20a w/o LT",kg CO2-Eq
+EDIP w/o LT," environmental impact w/o LT, global warming, GWP 500a w/o L",kg CO2-Eq
+EDIP w/o LT," environmental impact w/o LT, human toxicity, via air w/o LT",m3 air
+EDIP w/o LT," environmental impact w/o LT, human toxicity, via soil w/o L",m3 soil
+EDIP w/o LT," environmental impact w/o LT, human toxicity, via surface wa",m3 water
+EDIP w/o LT," environmental impact w/o LT, land filling, bulk waste w/o L",kg waste
+EDIP w/o LT," environmental impact w/o LT, land filling, hazardous waste ",kg waste
+EDIP w/o LT," environmental impact w/o LT, land filling, radioactive wast",kg waste
+EDIP w/o LT," environmental impact w/o LT, land filling, slag and ashes w",kg waste
+EDIP w/o LT," environmental impact w/o LT, nutrient enrichment, combined ",kg NO3-
+EDIP w/o LT," environmental impact w/o LT, nutrient enrichment, separate ",kg N
+EDIP w/o LT," environmental impact w/o LT, nutrient enrichment, separate ",kg P
+EDIP w/o LT," environmental impact w/o LT, photochemical ozone formation,",kg ethylene-Eq
+EDIP w/o LT," environmental impact w/o LT, photochemical ozone formation,",kg ethylene-Eq
+EDIP w/o LT," environmental impact w/o LT, stratospheric ozone depletion,",kg CFC-11-Eq
+EDIP w/o LT," environmental impact w/o LT, stratospheric ozone depletion,",kg CFC-11-Eq
+EDIP w/o LT," environmental impact w/o LT, stratospheric ozone depletion,",kg CFC-11-Eq
+EDIP w/o LT," environmental impact w/o LT, stratospheric ozone depletion,",kg CFC-11-Eq
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, alumi",kilogram
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, antim",kilogram
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, brown",kilogram
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, cadmi",kilogram
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, ceriu",kilogram
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, coal ",kilogram
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, cobal",kilogram
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, coppe",kilogram
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, gold ",kilogram
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, iron ",kilogram
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, lanth",kilogram
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, lead ",kilogram
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, manga",kilogram
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, mercu",kilogram
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, molyb",kilogram
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, natur",kilogram
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, nicke",kilogram
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, oil w",kilogram
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, palla",kilogram
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, plati",kilogram
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, silve",kilogram
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, tanta",kilogram
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, tin w",kilogram
+EDIP w/o LT," resource consumption w/o LT, non-renewable resources, zinc ",kilogram
+EDIP w/o LT," resource consumption w/o LT, renewable resources, wood w/o ",cubic meter
+EDIP2003," acidification, acidification",square meter
+EDIP2003," ecotoxicity, acute, in water",m3 water
+EDIP2003," ecotoxicity, chronic, in soil",m3 soil
+EDIP2003," ecotoxicity, chronic, in water",m3 water
+EDIP2003," ecotoxicity, in sewage treatment plants",m3 waste water
+EDIP2003," eutrophication, combined potential",kg NO3-
+EDIP2003," eutrophication, separate N potential",kg N
+EDIP2003," eutrophication, separate P potential",kg P
+EDIP2003," eutrophication, terrestrial eutrophication",square meter
+EDIP2003," global warming, GWP 100a",kg CO2-Eq
+EDIP2003," global warming, GWP 20a",kg CO2-Eq
+EDIP2003," global warming, GWP 500a",kg CO2-Eq
+EDIP2003," human toxicity, via air",m3 air
+EDIP2003," human toxicity, via soil",m3 soil
+EDIP2003," human toxicity, via surface water",m3 water
+EDIP2003," land filling, bulk waste",kg waste
+EDIP2003," land filling, hazardous waste",kg waste
+EDIP2003," land filling, radioactive waste",kg waste
+EDIP2003," land filling, slag and ashes",kg waste
+EDIP2003," non-renewable resources, aluminium",kilogram
+EDIP2003," non-renewable resources, antimony",kilogram
+EDIP2003," non-renewable resources, brown coal",kilogram
+EDIP2003," non-renewable resources, cadmium",kilogram
+EDIP2003," non-renewable resources, cerium",kilogram
+EDIP2003," non-renewable resources, coal",kilogram
+EDIP2003," non-renewable resources, cobalt",kilogram
+EDIP2003," non-renewable resources, copper",kilogram
+EDIP2003," non-renewable resources, gold",kilogram
+EDIP2003," non-renewable resources, iron",kilogram
+EDIP2003," non-renewable resources, lanthanum",kilogram
+EDIP2003," non-renewable resources, lead",kilogram
+EDIP2003," non-renewable resources, manganese",kilogram
+EDIP2003," non-renewable resources, mercury",kilogram
+EDIP2003," non-renewable resources, molybdenum",kilogram
+EDIP2003," non-renewable resources, natural gas",kilogram
+EDIP2003," non-renewable resources, nickel",kilogram
+EDIP2003," non-renewable resources, oil",kilogram
+EDIP2003," non-renewable resources, palladium",kilogram
+EDIP2003," non-renewable resources, platinum",kilogram
+EDIP2003," non-renewable resources, silver",kilogram
+EDIP2003," non-renewable resources, tantalum",kilogram
+EDIP2003," non-renewable resources, tin",kilogram
+EDIP2003," non-renewable resources, zinc",kilogram
+EDIP2003," photochemical ozone formation, impacts on human health",person.ppm.h
+EDIP2003," photochemical ozone formation, impacts on vegetation",m2.ppm.h
+EDIP2003," renewable resources, wood",cubic meter
+EDIP2003," stratospheric ozone depletion, ODP total",kg CFC-11-Eq
+EDIP2003 w/o LT," acidification w/o LT, acidification w/o LT",square meter
+EDIP2003 w/o LT," ecotoxicity w/o LT, acute, in water w/o LT",m3 water
+EDIP2003 w/o LT," ecotoxicity w/o LT, chronic, in soil w/o LT",m3 soil
+EDIP2003 w/o LT," ecotoxicity w/o LT, chronic, in water w/o LT",m3 water
+EDIP2003 w/o LT," ecotoxicity w/o LT, in sewage treatment plants w/o LT",m3 waste water
+EDIP2003 w/o LT," eutrophication w/o LT, combined potential w/o LT",kg NO3-
+EDIP2003 w/o LT," eutrophication w/o LT, separate N potential w/o LT",kg N
+EDIP2003 w/o LT," eutrophication w/o LT, separate P potential w/o LT",kg P
+EDIP2003 w/o LT," eutrophication w/o LT, terrestrial eutrophication w/o LT",square meter
+EDIP2003 w/o LT," global warming w/o LT, GWP 100a w/o LT",kg CO2-Eq
+EDIP2003 w/o LT," global warming w/o LT, GWP 20a w/o LT",kg CO2-Eq
+EDIP2003 w/o LT," global warming w/o LT, GWP 500a w/o LT",kg CO2-Eq
+EDIP2003 w/o LT," human toxicity w/o LT, via air w/o LT",m3 air
+EDIP2003 w/o LT," human toxicity w/o LT, via soil w/o LT",m3 soil
+EDIP2003 w/o LT," human toxicity w/o LT, via surface water w/o LT",m3 water
+EDIP2003 w/o LT," land filling w/o LT, bulk waste w/o LT",kg waste
+EDIP2003 w/o LT," land filling w/o LT, hazardous waste w/o LT",kg waste
+EDIP2003 w/o LT," land filling w/o LT, radioactive waste w/o LT",kg waste
+EDIP2003 w/o LT," land filling w/o LT, slag and ashes w/o LT",kg waste
+EDIP2003 w/o LT," non-renewable resources w/o LT, aluminium w/o LT",kilogram
+EDIP2003 w/o LT," non-renewable resources w/o LT, antimony w/o LT",kilogram
+EDIP2003 w/o LT," non-renewable resources w/o LT, brown coal w/o LT",kilogram
+EDIP2003 w/o LT," non-renewable resources w/o LT, cadmium w/o LT",kilogram
+EDIP2003 w/o LT," non-renewable resources w/o LT, cerium w/o LT",kilogram
+EDIP2003 w/o LT," non-renewable resources w/o LT, coal w/o LT",kilogram
+EDIP2003 w/o LT," non-renewable resources w/o LT, cobalt w/o LT",kilogram
+EDIP2003 w/o LT," non-renewable resources w/o LT, copper w/o LT",kilogram
+EDIP2003 w/o LT," non-renewable resources w/o LT, gold w/o LT",kilogram
+EDIP2003 w/o LT," non-renewable resources w/o LT, iron w/o LT",kilogram
+EDIP2003 w/o LT," non-renewable resources w/o LT, lanthanum w/o LT",kilogram
+EDIP2003 w/o LT," non-renewable resources w/o LT, lead w/o LT",kilogram
+EDIP2003 w/o LT," non-renewable resources w/o LT, manganese w/o LT",kilogram
+EDIP2003 w/o LT," non-renewable resources w/o LT, mercury w/o LT",kilogram
+EDIP2003 w/o LT," non-renewable resources w/o LT, molybdenum w/o LT",kilogram
+EDIP2003 w/o LT," non-renewable resources w/o LT, natural gas w/o LT",kilogram
+EDIP2003 w/o LT," non-renewable resources w/o LT, nickel w/o LT",kilogram
+EDIP2003 w/o LT," non-renewable resources w/o LT, oil w/o LT",kilogram
+EDIP2003 w/o LT," non-renewable resources w/o LT, palladium w/o LT",kilogram
+EDIP2003 w/o LT," non-renewable resources w/o LT, platinum w/o LT",kilogram
+EDIP2003 w/o LT," non-renewable resources w/o LT, silver w/o LT",kilogram
+EDIP2003 w/o LT," non-renewable resources w/o LT, tantalum w/o LT",kilogram
+EDIP2003 w/o LT," non-renewable resources w/o LT, tin w/o LT",kilogram
+EDIP2003 w/o LT," non-renewable resources w/o LT, zinc w/o LT",kilogram
+EDIP2003 w/o LT," photochemical ozone formation w/o LT, impacts on human heal",person.ppm.h
+EDIP2003 w/o LT," photochemical ozone formation w/o LT, impacts on vegetation",m2.ppm.h
+EDIP2003 w/o LT," renewable resources w/o LT, wood w/o LT",cubic meter
+EDIP2003 w/o LT," stratospheric ozone depletion w/o LT, ODP total w/o LT",kg CFC-11-Eq
+EPS 2000," total, abiotic stock resources",ELU
+EPS 2000," total, emissions into air",ELU
+EPS 2000," total, emissions into soil",ELU
+EPS 2000," total, emissions into water",ELU
+EPS 2000," total, land occupation",ELU
+EPS 2000," total, total",ELU
+ILCD 1.0.8 2016 midpoint," climate change, GWP 100a",kg CO2-Eq
+ILCD 1.0.8 2016 midpoint," ecosystem quality, freshwater and terrestrial acidification",mol H+-Eq
+ILCD 1.0.8 2016 midpoint," ecosystem quality, freshwater ecotoxicity",CTUh.m3.yr
+ILCD 1.0.8 2016 midpoint," ecosystem quality, freshwater eutrophication",kg P-Eq
+ILCD 1.0.8 2016 midpoint," ecosystem quality, ionising radiation",mol N-Eq
+ILCD 1.0.8 2016 midpoint," ecosystem quality, marine eutrophication",kg N-Eq
+ILCD 1.0.8 2016 midpoint," ecosystem quality, terrestrial eutrophication",mol N-Eq
+ILCD 1.0.8 2016 midpoint," human health, carcinogenic effects",CTUh
+ILCD 1.0.8 2016 midpoint," human health, ionising radiation",kg U235-Eq
+ILCD 1.0.8 2016 midpoint," human health, non-carcinogenic effects",CTUh
+ILCD 1.0.8 2016 midpoint," human health, ozone layer depletion",kg CFC-11-Eq
+ILCD 1.0.8 2016 midpoint," human health, photochemical ozone creation",kg ethylene-Eq
+ILCD 1.0.8 2016 midpoint," human health, respiratory effects, inorganics",kg PM2.5-Eq
+ILCD 1.0.8 2016 midpoint," resources, land use",kg Soil Organic Carbon
+ILCD 1.0.8 2016 midpoint," resources, mineral, fossils and renewables",kg Sb-Eq
+ILCD 1.0.8 2016 midpoint no LT," climate change, GWP 100a",kg CO2-Eq
+ILCD 1.0.8 2016 midpoint no LT," ecosystem quality, freshwater and terrestrial acidification",mol H+-Eq
+ILCD 1.0.8 2016 midpoint no LT," ecosystem quality, freshwater ecotoxicity",CTUh.m3.yr
+ILCD 1.0.8 2016 midpoint no LT," ecosystem quality, freshwater eutrophication",kg P-Eq
+ILCD 1.0.8 2016 midpoint no LT," ecosystem quality, ionising radiation",mol N-Eq
+ILCD 1.0.8 2016 midpoint no LT," ecosystem quality, marine eutrophication",kg N-Eq
+ILCD 1.0.8 2016 midpoint no LT," ecosystem quality, terrestrial eutrophication",mol N-Eq
+ILCD 1.0.8 2016 midpoint no LT," human health, carcinogenic effects",CTUh
+ILCD 1.0.8 2016 midpoint no LT," human health, ionising radiation",kg U235-Eq
+ILCD 1.0.8 2016 midpoint no LT," human health, non-carcinogenic effects",CTUh
+ILCD 1.0.8 2016 midpoint no LT," human health, ozone layer depletion",kg CFC-11-Eq
+ILCD 1.0.8 2016 midpoint no LT," human health, photochemical ozone creation",kg ethylene-Eq
+ILCD 1.0.8 2016 midpoint no LT," human health, respiratory effects, inorganics",kg PM2.5-Eq
+ILCD 1.0.8 2016 midpoint no LT," resources, land use",kg Soil Organic Carbon
+ILCD 1.0.8 2016 midpoint no LT," resources, mineral, fossils and renewables",kg Sb-Eq
+IMPACT 2002+ Endpoint," climate change, climate change",points
+IMPACT 2002+ Endpoint," climate change, total",points
+IMPACT 2002+ Endpoint," ecosystem quality, aquatic ecotoxicity",points
+IMPACT 2002+ Endpoint," ecosystem quality, land occupation",points
+IMPACT 2002+ Endpoint," ecosystem quality, terrestrial acidification & nutrificatio",points
+IMPACT 2002+ Endpoint," ecosystem quality, terrestrial ecotoxicity",points
+IMPACT 2002+ Endpoint," ecosystem quality, total",points
+IMPACT 2002+ Endpoint," human health, human toxicity",points
+IMPACT 2002+ Endpoint," human health, ionising radiation",points
+IMPACT 2002+ Endpoint," human health, ozone layer depletion",points
+IMPACT 2002+ Endpoint," human health, photochemical oxidation",points
+IMPACT 2002+ Endpoint," human health, respiratory effects inorganics",points
+IMPACT 2002+ Endpoint," human health, total",points
+IMPACT 2002+ Endpoint," resources, mineral extraction",points
+IMPACT 2002+ Endpoint," resources, non-renewable energy",points
+IMPACT 2002+ Endpoint," resources, total",points
+IMPACT 2002+ Midpoint," ecosystem quality, aquatic acidification",kg SO2-Eq
+IMPACT 2002+ Midpoint," ecosystem quality, aquatic eutrophication",kg PO4-Eq
+IPCC 2001," climate change, GWP 100a",kg CO2-Eq
+IPCC 2001," climate change, GWP 20a",kg CO2-Eq
+IPCC 2001," climate change, GWP 500a",kg CO2-Eq
+IPCC 2007," climate change, GWP 100a",kg CO2-Eq
+IPCC 2007," climate change, GWP 20a",kg CO2-Eq
+IPCC 2007," climate change, GWP 500a",kg CO2-Eq
+IPCC 2007 no LT," climate change, GWP 100a",kg CO2-Eq
+IPCC 2007 no LT," climate change, GWP 20a",kg CO2-Eq
+IPCC 2007 no LT," climate change, GWP 500a",kg CO2-Eq
+IPCC 2013," climate change, GTP 100a",kg CO2-Eq
+IPCC 2013," climate change, GTP 20a",kg CO2-Eq
+IPCC 2013," climate change, GWP 100a",kg CO2-Eq
+IPCC 2013," climate change, GWP 20a",kg CO2-Eq
+IPCC 2013 no LT," climate change, GTP 100a",kg CO2-Eq
+IPCC 2013 no LT," climate change, GTP 20a",kg CO2-Eq
+IPCC 2013 no LT," climate change, GWP 100a",kg CO2-Eq
+IPCC 2013 no LT," climate change, GWP 20a",kg CO2-Eq
+ReCiPe Endpoint E,"A, ecosystem quality, agricultural land occupation",points
+ReCiPe Endpoint E,"A, ecosystem quality, climate change, ecosystems",points
+ReCiPe Endpoint E,"A, ecosystem quality, freshwater ecotoxicity",points
+ReCiPe Endpoint E,"A, ecosystem quality, freshwater eutrophication",points
+ReCiPe Endpoint E,"A, ecosystem quality, marine ecotoxicity",points
+ReCiPe Endpoint E,"A, ecosystem quality, natural land transformation",points
+ReCiPe Endpoint E,"A, ecosystem quality, terrestrial acidification",points
+ReCiPe Endpoint E,"A, ecosystem quality, terrestrial ecotoxicity",points
+ReCiPe Endpoint E,"A, ecosystem quality, total",points
+ReCiPe Endpoint E,"A, ecosystem quality, urban land occupation",points
+ReCiPe Endpoint E,"A, human health, climate change, human health",points
+ReCiPe Endpoint E,"A, human health, human toxicity",points
+ReCiPe Endpoint E,"A, human health, ionising radiation",points
+ReCiPe Endpoint E,"A, human health, ozone depletion",points
+ReCiPe Endpoint E,"A, human health, particulate matter formation",points
+ReCiPe Endpoint E,"A, human health, photochemical oxidant formation",points
+ReCiPe Endpoint E,"A, human health, total",points
+ReCiPe Endpoint E,"A, resources, fossil depletion",points
+ReCiPe Endpoint E,"A, resources, metal depletion",points
+ReCiPe Endpoint E,"A, resources, total",points
+ReCiPe Endpoint E,"A, total, total",points
+ReCiPe Endpoint E,"A w/o LT, ecosystem quality w/o LT, agricultural land occupa",points
+ReCiPe Endpoint E,"A w/o LT, ecosystem quality w/o LT, climate change, ecosyste",points
+ReCiPe Endpoint E,"A w/o LT, ecosystem quality w/o LT, freshwater ecotoxicity w",points
+ReCiPe Endpoint E,"A w/o LT, ecosystem quality w/o LT, freshwater eutrophicatio",points
+ReCiPe Endpoint E,"A w/o LT, ecosystem quality w/o LT, marine ecotoxicity w/o L",points
+ReCiPe Endpoint E,"A w/o LT, ecosystem quality w/o LT, natural land transformat",points
+ReCiPe Endpoint E,"A w/o LT, ecosystem quality w/o LT, terrestrial acidificatio",points
+ReCiPe Endpoint E,"A w/o LT, ecosystem quality w/o LT, terrestrial ecotoxicity ",points
+ReCiPe Endpoint E,"A w/o LT, ecosystem quality w/o LT, total w/o LT",points
+ReCiPe Endpoint E,"A w/o LT, ecosystem quality w/o LT, urban land occupation w/",points
+ReCiPe Endpoint E,"A w/o LT, human health w/o LT, climate change, human health ",points
+ReCiPe Endpoint E,"A w/o LT, human health w/o LT, human toxicity w/o LT",points
+ReCiPe Endpoint E,"A w/o LT, human health w/o LT, ionising radiation w/o LT",points
+ReCiPe Endpoint E,"A w/o LT, human health w/o LT, ozone depletion w/o LT",points
+ReCiPe Endpoint E,"A w/o LT, human health w/o LT, particulate matter formation ",points
+ReCiPe Endpoint E,"A w/o LT, human health w/o LT, photochemical oxidant formati",points
+ReCiPe Endpoint E,"A w/o LT, human health w/o LT, total w/o LT",points
+ReCiPe Endpoint E,"A w/o LT, resources w/o LT, fossil depletion w/o LT",points
+ReCiPe Endpoint E,"A w/o LT, resources w/o LT, metal depletion w/o LT",points
+ReCiPe Endpoint E,"A w/o LT, resources w/o LT, total w/o LT",points
+ReCiPe Endpoint E,"A w/o LT, total w/o LT, total w/o LT",points
+ReCiPe Endpoint H,"A, ecosystem quality, agricultural land occupation",points
+ReCiPe Endpoint H,"A, ecosystem quality, climate change, ecosystems",points
+ReCiPe Endpoint H,"A, ecosystem quality, freshwater ecotoxicity",points
+ReCiPe Endpoint H,"A, ecosystem quality, freshwater eutrophication",points
+ReCiPe Endpoint H,"A, ecosystem quality, marine ecotoxicity",points
+ReCiPe Endpoint H,"A, ecosystem quality, natural land transformation",points
+ReCiPe Endpoint H,"A, ecosystem quality, terrestrial acidification",points
+ReCiPe Endpoint H,"A, ecosystem quality, terrestrial ecotoxicity",points
+ReCiPe Endpoint H,"A, ecosystem quality, total",points
+ReCiPe Endpoint H,"A, ecosystem quality, urban land occupation",points
+ReCiPe Endpoint H,"A, human health, climate change, human health",points
+ReCiPe Endpoint H,"A, human health, human toxicity",points
+ReCiPe Endpoint H,"A, human health, ionising radiation",points
+ReCiPe Endpoint H,"A, human health, ozone depletion",points
+ReCiPe Endpoint H,"A, human health, particulate matter formation",points
+ReCiPe Endpoint H,"A, human health, photochemical oxidant formation",points
+ReCiPe Endpoint H,"A, human health, total",points
+ReCiPe Endpoint H,"A, resources, fossil depletion",points
+ReCiPe Endpoint H,"A, resources, metal depletion",points
+ReCiPe Endpoint H,"A, resources, total",points
+ReCiPe Endpoint H,"A, total, total",points
+ReCiPe Endpoint H,"A w/o LT, ecosystem quality w/o LT, agricultural land occupa",points
+ReCiPe Endpoint H,"A w/o LT, ecosystem quality w/o LT, climate change, ecosyste",points
+ReCiPe Endpoint H,"A w/o LT, ecosystem quality w/o LT, freshwater ecotoxicity w",points
+ReCiPe Endpoint H,"A w/o LT, ecosystem quality w/o LT, freshwater eutrophicatio",points
+ReCiPe Endpoint H,"A w/o LT, ecosystem quality w/o LT, marine ecotoxicity w/o L",points
+ReCiPe Endpoint H,"A w/o LT, ecosystem quality w/o LT, natural land transformat",points
+ReCiPe Endpoint H,"A w/o LT, ecosystem quality w/o LT, terrestrial acidificatio",points
+ReCiPe Endpoint H,"A w/o LT, ecosystem quality w/o LT, terrestrial ecotoxicity ",points
+ReCiPe Endpoint H,"A w/o LT, ecosystem quality w/o LT, total w/o LT",points
+ReCiPe Endpoint H,"A w/o LT, ecosystem quality w/o LT, urban land occupation w/",points
+ReCiPe Endpoint H,"A w/o LT, human health w/o LT, climate change, human health ",points
+ReCiPe Endpoint H,"A w/o LT, human health w/o LT, human toxicity w/o LT",points
+ReCiPe Endpoint H,"A w/o LT, human health w/o LT, ionising radiation w/o LT",points
+ReCiPe Endpoint H,"A w/o LT, human health w/o LT, ozone depletion w/o LT",points
+ReCiPe Endpoint H,"A w/o LT, human health w/o LT, particulate matter formation ",points
+ReCiPe Endpoint H,"A w/o LT, human health w/o LT, photochemical oxidant formati",points
+ReCiPe Endpoint H,"A w/o LT, human health w/o LT, total w/o LT",points
+ReCiPe Endpoint H,"A w/o LT, resources w/o LT, fossil depletion w/o LT",points
+ReCiPe Endpoint H,"A w/o LT, resources w/o LT, metal depletion w/o LT",points
+ReCiPe Endpoint H,"A w/o LT, resources w/o LT, total w/o LT",points
+ReCiPe Endpoint H,"A w/o LT, total w/o LT, total w/o LT",points
+ReCiPe Endpoint I,"A, ecosystem quality, agricultural land occupation",points
+ReCiPe Endpoint I,"A, ecosystem quality, climate change, ecosystems",points
+ReCiPe Endpoint I,"A, ecosystem quality, freshwater ecotoxicity",points
+ReCiPe Endpoint I,"A, ecosystem quality, freshwater eutrophication",points
+ReCiPe Endpoint I,"A, ecosystem quality, marine ecotoxicity",points
+ReCiPe Endpoint I,"A, ecosystem quality, natural land transformation",points
+ReCiPe Endpoint I,"A, ecosystem quality, terrestrial acidification",points
+ReCiPe Endpoint I,"A, ecosystem quality, terrestrial ecotoxicity",points
+ReCiPe Endpoint I,"A, ecosystem quality, total",points
+ReCiPe Endpoint I,"A, ecosystem quality, urban land occupation",points
+ReCiPe Endpoint I,"A, human health, climate change, human health",points
+ReCiPe Endpoint I,"A, human health, human toxicity",points
+ReCiPe Endpoint I,"A, human health, ionising radiation",points
+ReCiPe Endpoint I,"A, human health, ozone depletion",points
+ReCiPe Endpoint I,"A, human health, particulate matter formation",points
+ReCiPe Endpoint I,"A, human health, photochemical oxidant formation",points
+ReCiPe Endpoint I,"A, human health, total",points
+ReCiPe Endpoint I,"A, resources, fossil depletion",points
+ReCiPe Endpoint I,"A, resources, metal depletion",points
+ReCiPe Endpoint I,"A, resources, total",points
+ReCiPe Endpoint I,"A, total, total",points
+ReCiPe Midpoint E," agricultural land occupation, ALOP",square meter-year
+ReCiPe Midpoint E," climate change, GWP500",kg CO2-Eq
+ReCiPe Midpoint E," fossil depletion, FDP",kg oil-Eq
+ReCiPe Midpoint E," freshwater ecotoxicity, FETPinf","kg 1,4-DCB-Eq"
+ReCiPe Midpoint E," freshwater eutrophication, FEP",kg P-Eq
+ReCiPe Midpoint E," human toxicity, HTPinf","kg 1,4-DCB-Eq"
+ReCiPe Midpoint E," ionising radiation, IRP_HE",kg U235-Eq
+ReCiPe Midpoint E," marine ecotoxicity, METPinf","kg 1,4-DCB-Eq"
+ReCiPe Midpoint E," marine eutrophication, MEP",kg N-Eq
+ReCiPe Midpoint E," metal depletion, MDP",kg Fe-Eq
+ReCiPe Midpoint E," natural land transformation, NLTP",square meter
+ReCiPe Midpoint E," ozone depletion, ODPinf",kg CFC-11-Eq
+ReCiPe Midpoint E," particulate matter formation, PMFP",kg PM10-Eq
+ReCiPe Midpoint E," photochemical oxidant formation, POFP",kg NMVOC
+ReCiPe Midpoint E," terrestrial acidification, TAP500",kg SO2-Eq
+ReCiPe Midpoint E," terrestrial ecotoxicity, TETPinf","kg 1,4-DCB-Eq"
+ReCiPe Midpoint E," urban land occupation, ULOP",square meter-year
+ReCiPe Midpoint E," water depletion, WDP",cubic meter
+ReCiPe Midpoint E w/o LT," agricultural land occupation w/o LT, ALOP w/o LT",square meter-year
+ReCiPe Midpoint E w/o LT," climate change w/o LT, GWP500 w/o LT",kg CO2-Eq
+ReCiPe Midpoint E w/o LT," fossil depletion w/o LT, FDP w/o LT",kg oil-Eq
+ReCiPe Midpoint E w/o LT," freshwater ecotoxicity w/o LT, FETPinf w/o LT","kg 1,4-DCB-Eq"
+ReCiPe Midpoint E w/o LT," freshwater eutrophication w/o LT, FEP w/o LT",kg P-Eq
+ReCiPe Midpoint E w/o LT," human toxicity w/o LT, HTPinf w/o LT","kg 1,4-DCB-Eq"
+ReCiPe Midpoint E w/o LT," ionising radiation w/o LT, IRP_HE w/o LT",kg U235-Eq
+ReCiPe Midpoint E w/o LT," marine ecotoxicity w/o LT, METPinf w/o LT","kg 1,4-DCB-Eq"
+ReCiPe Midpoint E w/o LT," marine eutrophication w/o LT, MEP w/o LT",kg N-Eq
+ReCiPe Midpoint E w/o LT," metal depletion w/o LT, MDP w/o LT",kg Fe-Eq
+ReCiPe Midpoint E w/o LT," natural land transformation w/o LT, NLTP w/o LT",square meter
+ReCiPe Midpoint E w/o LT," ozone depletion w/o LT, ODPinf w/o LT",kg CFC-11-Eq
+ReCiPe Midpoint E w/o LT," particulate matter formation w/o LT, PMFP w/o LT",kg PM10-Eq
+ReCiPe Midpoint E w/o LT," photochemical oxidant formation w/o LT, POFP w/o LT",kg NMVOC
+ReCiPe Midpoint E w/o LT," terrestrial acidification w/o LT, TAP500 w/o LT",kg SO2-Eq
+ReCiPe Midpoint E w/o LT," terrestrial ecotoxicity w/o LT, TETPinf w/o LT","kg 1,4-DCB-Eq"
+ReCiPe Midpoint E w/o LT," urban land occupation w/o LT, ULOP w/o LT",square meter-year
+ReCiPe Midpoint E w/o LT," water depletion w/o LT, WDP w/o LT",cubic meter
+ReCiPe Midpoint H," agricultural land occupation, ALOP",square meter-year
+ReCiPe Midpoint H," climate change, GWP100",kg CO2-Eq
+ReCiPe Midpoint H," fossil depletion, FDP",kg oil-Eq
+ReCiPe Midpoint H," freshwater ecotoxicity, FETPinf","kg 1,4-DCB-Eq"
+ReCiPe Midpoint H," freshwater eutrophication, FEP",kg P-Eq
+ReCiPe Midpoint H," human toxicity, HTPinf","kg 1,4-DCB-Eq"
+ReCiPe Midpoint H," ionising radiation, IRP_HE",kg U235-Eq
+ReCiPe Midpoint H," marine ecotoxicity, METPinf","kg 1,4-DCB-Eq"
+ReCiPe Midpoint H," marine eutrophication, MEP",kg N-Eq
+ReCiPe Midpoint H," metal depletion, MDP",kg Fe-Eq
+ReCiPe Midpoint H," natural land transformation, NLTP",square meter
+ReCiPe Midpoint H," ozone depletion, ODPinf",kg CFC-11-Eq
+ReCiPe Midpoint H," particulate matter formation, PMFP",kg PM10-Eq
+ReCiPe Midpoint H," photochemical oxidant formation, POFP",kg NMVOC
+ReCiPe Midpoint H," terrestrial acidification, TAP100",kg SO2-Eq
+ReCiPe Midpoint H," terrestrial ecotoxicity, TETPinf","kg 1,4-DCB-Eq"
+ReCiPe Midpoint H," urban land occupation, ULOP",square meter-year
+ReCiPe Midpoint H," water depletion, WDP",cubic meter
+ReCiPe Midpoint H w/o LT," agricultural land occupation w/o LT, ALOP w/o LT",square meter-year
+ReCiPe Midpoint H w/o LT," climate change w/o LT, GWP100 w/o LT",kg CO2-Eq
+ReCiPe Midpoint H w/o LT," fossil depletion w/o LT, FDP w/o LT",kg oil-Eq
+ReCiPe Midpoint H w/o LT," freshwater ecotoxicity w/o LT, FETPinf w/o LT","kg 1,4-DCB-Eq"
+ReCiPe Midpoint H w/o LT," freshwater eutrophication w/o LT, FEP w/o LT",kg P-Eq
+ReCiPe Midpoint H w/o LT," human toxicity w/o LT, HTPinf w/o LT","kg 1,4-DCB-Eq"
+ReCiPe Midpoint H w/o LT," ionising radiation w/o LT, IRP_HE w/o LT",kg U235-Eq
+ReCiPe Midpoint H w/o LT," marine ecotoxicity w/o LT, METPinf w/o LT","kg 1,4-DCB-Eq"
+ReCiPe Midpoint H w/o LT," marine eutrophication w/o LT, MEP w/o LT",kg N-Eq
+ReCiPe Midpoint H w/o LT," metal depletion w/o LT, MDP w/o LT",kg Fe-Eq
+ReCiPe Midpoint H w/o LT," natural land transformation w/o LT, NLTP w/o LT",square meter
+ReCiPe Midpoint H w/o LT," ozone depletion w/o LT, ODPinf w/o LT",kg CFC-11-Eq
+ReCiPe Midpoint H w/o LT," particulate matter formation w/o LT, PMFP w/o LT",kg PM10-Eq
+ReCiPe Midpoint H w/o LT," photochemical oxidant formation w/o LT, POFP w/o LT",kg NMVOC
+ReCiPe Midpoint H w/o LT," terrestrial acidification w/o LT, TAP100 w/o LT",kg SO2-Eq
+ReCiPe Midpoint H w/o LT," terrestrial ecotoxicity w/o LT, TETPinf w/o LT","kg 1,4-DCB-Eq"
+ReCiPe Midpoint H w/o LT," urban land occupation w/o LT, ULOP w/o LT",square meter-year
+ReCiPe Midpoint H w/o LT," water depletion w/o LT, WDP w/o LT",cubic meter
+ReCiPe Midpoint I," agricultural land occupation, ALOP",square meter-year
+ReCiPe Midpoint I," climate change, GWP20",kg CO2-Eq
+ReCiPe Midpoint I," fossil depletion, FDP",kg oil-Eq
+ReCiPe Midpoint I," freshwater ecotoxicity, FETP100","kg 1,4-DCB-Eq"
+ReCiPe Midpoint I," freshwater eutrophication, FEP",kg P-Eq
+ReCiPe Midpoint I," human toxicity, HTP100","kg 1,4-DCB-Eq"
+ReCiPe Midpoint I," ionising radiation, IRP_I",kg U235-Eq
+ReCiPe Midpoint I," marine ecotoxicity, METP100","kg 1,4-DCB-Eq"
+ReCiPe Midpoint I," marine eutrophication, MEP",kg N-Eq
+ReCiPe Midpoint I," metal depletion, MDP",kg Fe-Eq
+ReCiPe Midpoint I," natural land transformation, NLTP",square meter
+ReCiPe Midpoint I," ozone depletion, ODPinf",kg CFC-11-Eq
+ReCiPe Midpoint I," particulate matter formation, PMFP",kg PM10-Eq
+ReCiPe Midpoint I," photochemical oxidant formation, POFP",kg NMVOC
+ReCiPe Midpoint I," terrestrial acidification, TAP20",kg SO2-Eq
+ReCiPe Midpoint I," terrestrial ecotoxicity, TETP100","kg 1,4-DCB-Eq"
+ReCiPe Midpoint I," urban land occupation, ULOP",square meter-year
+ReCiPe Midpoint I," water depletion, WDP",cubic meter
+TRACI," environmental impact, acidification",moles of H+-Eq
+TRACI," environmental impact, ecotoxicity","kg 2,4-D-Eq"
+TRACI," environmental impact, eutrophication",kg N
+TRACI," environmental impact, global warming",kg CO2-Eq
+TRACI," environmental impact, ozone depletion",kg CFC-11-Eq
+TRACI," environmental impact, photochemical oxidation",kg NOx-Eq
+TRACI," human health, carcinogenics",kg benzene-Eq
+TRACI," human health, non-carcinogenics",kg toluene-Eq
+TRACI," human health, respiratory effects, average",kg PM2.5-Eq
+USEtox," ecotoxicity, total",CTU
+USEtox," human toxicity, carcinogenic",CTU
+USEtox," human toxicity, non-carcinogenic",CTU
+USEtox," human toxicity, total",CTU
+USEtox w/o LT," ecotoxicity w/o LT, total w/o LT",CTU
+USEtox w/o LT," human toxicity w/o LT, carcinogenic w/o LT",CTU
+USEtox w/o LT," human toxicity w/o LT, non-carcinogenic w/o LT",CTU
+USEtox w/o LT," human toxicity w/o LT, total w/o LT",CTU

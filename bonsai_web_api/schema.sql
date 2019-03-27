@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS user;
-
 DROP TABLE IF EXISTS product;
+DROP TABLE IF EXISTS method;
 
 CREATE TABLE user (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -30,4 +30,11 @@ CREATE TABLE product(
     pedigreeMatrix TEXT,
     imageUrl TEXT
 
+);
+
+CREATE TABLE method(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name_method TEXT NOT NULL,
+    name_impact TEXT NOT NULL,
+    unit TEXT NOT NULL
 );

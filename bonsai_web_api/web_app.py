@@ -19,3 +19,5 @@ def get_product_descrition(product_uri):
     return render_template('web_app/bonsai_pedia.html', product=json.loads(product))
 
 
+
+

@@ -104,3 +104,21 @@ def products_search_by_name(product_name):
     else:
         abort(404)
         
+@bp.route('/rest/lca_request', methods=['POST'])
+def lca_request():
+    print(request.form)
+    
+    return "OK"
+
+@bp.route('/rest/methods/', methods=["GET"])
+def methods_list():
+    db = get_db()
+
+    cursor = db.execute('SELECT DISTINCT name_method FROM method;')
+        
+    methods = [{
+        'name_method': row[0]
+    } for row in cursor.fetchall()]
+
+    return json_response(json.dumps(methods))
+        

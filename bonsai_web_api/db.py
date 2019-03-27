@@ -40,6 +40,13 @@ def init_db():
        
     db.executemany('INSERT INTO product ("uri","name", "activity_code_1","activity_code_2","introduction","entityType","graphdbName","dataSpace",	"abstractField","creationDate","sameAs","industry","outputOf","inputOf","productionVolume","productionVolumeUnit","pedigreeMatrix","imageUrl") VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', to_db)
     
+    with current_app.open_resource('bw2_methods.csv','r') as fin:
+        # csv.DictReader uses first line in file for column headings by default
+        dr = csv.DictReader(fin) # comma is default delimiter
+        to_db = [(i['name_method'], i['name_impact'], i['unit']) for i in dr]
+       
+    db.executemany('INSERT INTO method ("name_method","name_impact", "unit") VALUES ( ?, ?, ?)', to_db)
+    
     db.commit()
     
 
