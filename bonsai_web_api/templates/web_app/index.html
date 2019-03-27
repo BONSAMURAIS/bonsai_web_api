@@ -10,28 +10,21 @@
         <div class="row ml-1">
             <h4>Your search query.</h4>
             <div class="table-responsive">
-            <table class="table" id="table_search_results" style="font-size:12px;">
+            <table class="table table-hover" id="table_search_results" style="font-size:12px;">
                 <thead>
                     <tr>
                         <th>Name</th>
-                        <th>Type</th>
-                        <th>Unit</th>
-                        <th>Year</th>
-                        <th>Location</th>
-                        <th>Id</th>
-                        <th>Select</th>
+                        <th>URI</th>
+                        <th>Select?</th>
                     <tr>
                 </thead>
                 <tbody>
               {% for product in products %}
                 <tr>
-                    <td>{{ product["item"] }}</td>
-                    <td>{{ product["type"] }}</td>
-                    <td>{{ product["unit"] }}</td>
-                    <td>{{ product["year"] }}</td>
-                    <td>{{ product["location"] }}</td>
-                    <td>{{ product["id"] }}</td>
-                    <td> <button class="btn btn-outline-success my-2 my-sm-0" id="{{ product["id"] }}" onclick='add_row_to_table(this)'>Yes</button> </td>
+                     
+                    <td><a id="popoverData" class="btn" href="/product_description/{{ product['uri']}}" data-content="{{ product['introduction']}}" target="_blank" rel="popover" data-placement="bottom" data-original-title="{{ product['name'] }}" data-trigger="hover" style='font-size:12px;'>{{ product["name"] }}</a></td>
+                    <td>{{ product["uri"] }}</td>
+                    <td> <button class="btn btn-outline-success my-2 my-sm-0" id="{{ product['uri'] }}" onclick='add_row_to_table(this)'>Yes</button> </td>
                 </tr>
                 {% endfor%}
 
@@ -49,16 +42,31 @@
         <div class="row ml-1">
             <h4>Products to calculate.</h4><br>
              <div class="table-responsive">
-            <table class="table" id="table_products_calc" style="font-size:12px;">
+            <table class="table table-hover" id="table_products_calc" style="font-size:12px;">
                 <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Type</th>
+                       <th>Name</th>
+                        <th>URI</th>
+                        <th>Remove?</th>
+                    <tr>
+                </thead>
+                <tbody>
+
+              </tbody>
+            </table>
+            </div>
+        </div>
+        <div class="row ml-1" id="div_calc_setup" style="display:none;">
+            <h4>Calculation setup.</h4><br>
+             <div class="table-responsive">
+            <table class="table table-hover" id="table_calculation_setup" style="font-size:12px;">
+                <thead>
+                    <tr>
+                       <th>Name</th>
+                        <th>URI</th>
+                        <th>Quantity</th>
                         <th>Unit</th>
-                        <th>Year</th>
-                        <th>Location</th>
-                        <th>Id</th>
-                        <th>Remove</th>
+                        <th>Allocation algorithm</th>
                     <tr>
                 </thead>
                 <tbody>
@@ -71,18 +79,18 @@
         
         
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4" id="col_results" style="display:none;">
         <div class="row ml-1">
             <h4>Results.</h4>
             <div class="table-responsive">
-            <table class="table" style="font-size:12px;">
+            <table class="table table-hover" style="font-size:12px;">
                 <thead>
                     <tr>
                         <th>Name</th>
-                        <th>Type</th>
+                        <th>Reference flow</th>
+                        <th>Method</th>
+                        <th>Result</th>
                         <th>Unit</th>
-                        <th>Year</th>
-                        <th>Location</th>
                     <tr>
                 </thead>
                 <tbody>

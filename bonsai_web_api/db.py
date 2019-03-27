@@ -33,12 +33,12 @@ def init_db():
     with current_app.open_resource('schema.sql') as f:
         db.executescript(f.read().decode('utf8'))
 
-    with current_app.open_resource('example_db_products.csv','r') as fin:
+    with current_app.open_resource('exiobase_activity_URIs.csv','r') as fin:
         # csv.DictReader uses first line in file for column headings by default
         dr = csv.DictReader(fin) # comma is default delimiter
-        to_db = [(i['item'], i['type'], i['year'], i['unit'], i['location']) for i in dr]
+        to_db = [(i['uri'], i['name'], i['activity_code_1'], i['activity_code_2'], i['introduction'], i['entityType'], i['graphdbName'], i['dataSpace'], i['abstractField'], i['creationDate'], i[	'sameAs'], i['industry'], i['outputOf'], i['inputOf'], i['productionVolume'], i['productionVolumeUnit'], i['pedigreeMatrix'], i['imageUrl']) for i in dr]
        
-    db.executemany('INSERT INTO product ("item","type","year","unit","location") VALUES ( ?, ?, ?, ?, ?);', to_db)
+    db.executemany('INSERT INTO product ("uri","name", "activity_code_1","activity_code_2","introduction","entityType","graphdbName","dataSpace",	"abstractField","creationDate","sameAs","industry","outputOf","inputOf","productionVolume","productionVolumeUnit","pedigreeMatrix","imageUrl") VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', to_db)
     
     db.commit()
     

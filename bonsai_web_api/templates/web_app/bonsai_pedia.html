@@ -1,0 +1,290 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+<!-- page-header -->
+    <div class="page-header">
+	<!-- div class="pull-right">
+	    <a href="http://wiki.dbpedia.org/about" title="About DBpedia">
+	    <img class="img-responsive" src="/statics/images/dbpedia_logo_land_120.png" alt="About DBpedia"/>
+	    </a>
+	</div -->
+	<h1 id="title">About:
+	    <a href="#">{{ product[0]['name'] }}</a>
+	</h1>
+	<div class="page-resource-uri">
+	    An Entity of Type : <a href="http://dbpedia.org/ontology/Person">{{ product[0]['entityType'] }}</a>,
+	    from Named Graph : <a href="http://dbpedia.org">{{ product[0]['graphdbName'] }}</a>,
+	    within Data Space : <a href="http://dbpedia.org">{{ product[0]['dataSpace'] }}</a>
+	</div>
+    </div>
+<!-- page-header -->
+<!-- row -->
+    <div class="row">
+	<div class="col-xs-12">
+	    <p class="lead">{{ product[0]['introduction'] }}</p>
+	</div>
+	<div class="col-xs-12">
+	    <!-- proptable -->
+	    <table class="description table table-striped">
+	    <tr>
+		<th class="col-xs-3">Property</th>
+		<th class="col-xs-9">Value</th>
+	    </tr>
+<tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/abstract"><small>bont:</small>abstract</a>
+</td><td><ul>
+	<li ><span class="literal"><span property="bont:abstract" xmlns:bont="http://dbpedia.org/ontology/" xml:lang="en">{{ product[0]['abstractField'] }}</span><small> (en)</small></span></li>
+	
+</ul></td></tr>
+            
+<tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/abstract"><small>bont:</small>relation</a>
+        </td><td>
+            <div id="svg_3S_graph"></div>
+        </td>
+</tr>
+            
+<tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/birthDate"><small>bont:</small>creationDate</a>
+</td><td><ul>
+	<li><span class="literal"><span property="bont:birthDate" xmlns:bont="http://dbpedia.org/ontology/">{{ product[0]['creationDate'] }}</span><small> (xsd:date)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/birthPlace"><small>bont:</small>sameAs</a>
+</td><td><ul>
+	<li><span class="literal"><a class="uri" rel="bont:sameAs" xmlns:bont="http://dbpedia.org/ontology/" href="#">{{ product[0]['sameAs'] }}</a></span></li>
+
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/deathDate"><small>bont:</small>fromIndustry</a>
+</td><td><ul>
+	<li><span class="literal"><span property="bont:fromIndustry" xmlns:bont="http://dbpedia.org/ontology/"></span> {{ product[0]['industry'] }} <small> </small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/deathPlace"><small>bont:</small>outputOf</a>
+</td><td><ul>
+	<li><span class="literal"><a class="uri" rel="bont:outputOf" xmlns:bont="http://dbpedia.org/ontology/" href="#">{{ product[0]['outputOf'] }}  </a></span></li>
+	
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/parent"><small>bont:</small>inputOf</a>
+</td><td><ul>
+            
+            {% set list = product[0]['inputOf'].split(';') %}
+    {% for input in   list   %}        
+        {% if not loop.last %}
+            <li><span class="literal"><a class="uri" rel="bont:inputOf" xmlns:bont="http://dbpedia.org/ontology/" href="#">{{ input }}  </a></span></li>
+            
+        {% endif %}
+    {% endfor %}
+
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/spouse"><small>bont:</small>productionVolume</a>
+</td><td><ul>
+	<li><span class="literal"><a class="uri" rel="bont:productionVolume" xmlns:bont="http://dbpedia.org/ontology/" > {{ product[0]['productionVolume'] }} {{ product[0]['productionVolumeUnit'] }}   </a></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/thumbnail"><small>bont:</small>pedigreeMatrix</a>
+</td><td><ul>
+    <li><span class="literal"><a class="uri" rel="bont:productionVolume" xmlns:bont="http://dbpedia.org/ontology/" > {{ product[0]['pedigreeMatrix'] }}</a></span></li></ul></td></tr>
+            
+<tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/thumbnail"><small>bont:</small>imageUrl</a>
+</td><td><ul>
+    <li><span class="literal"><img src="{{ product[0]['imageUrl'] }}" alt="image" height="100" width="100"></span></li></ul></td></tr>
+            
+            
+	
+
+
+      </table>
+    </div>
+<!-- row  -->
+</div>
+</div>
+
+<style type="text/css">
+		.node {
+		  stroke: #fff;
+		  fill:#ddd;
+		  stroke-width: 1.5px;
+		}
+
+		.link {
+		  stroke: #999;
+		  stroke-opacity: .6;
+		}
+
+		marker {
+			stroke: #999;
+			fill:rgba(124,240,10,0);
+		}
+
+		.node-text {
+		  font: 11px sans-serif;
+		  fill:black;
+		}
+
+		.link-text {
+		  font: 9px sans-serif;
+		  fill:grey;
+		}
+		
+		
+	</style>
+
+
+<script>
+		function filterNodesById(nodes,id){
+			return nodes.filter(function(n) { return n.id === id; });
+		}
+		
+		function triplesToGraph(triples){
+		
+			svg.html("");
+			//Graph
+			var graph={nodes:[], links:[]};
+			
+			//Initial Graph from triples
+			triples.forEach(function(triple){
+				var subjId = triple.subject;
+				var predId = triple.predicate;
+				var objId = triple.object;
+				
+				var subjNode = filterNodesById(graph.nodes, subjId)[0];
+				var objNode  = filterNodesById(graph.nodes, objId)[0];
+				
+				if(subjNode==null){
+					subjNode = {id:subjId, label:subjId, weight:1};
+					graph.nodes.push(subjNode);
+				}
+				
+				if(objNode==null){
+					objNode = {id:objId, label:objId, weight:1};
+					graph.nodes.push(objNode);
+				}
+			
+				
+				graph.links.push({source:subjNode, target:objNode, predicate:predId, weight:1});
+			});
+			
+			return graph;
+		}
+		
+		
+		function update(){
+			// ==================== Add Marker ====================
+			svg.append("svg:defs").selectAll("marker")
+			    .data(["end"])
+			  .enter().append("svg:marker")
+			    .attr("id", String)
+			    .attr("viewBox", "0 -5 10 10")
+			    .attr("refX", 30)
+			    .attr("refY", -0.5)
+			    .attr("markerWidth", 6)
+			    .attr("markerHeight", 6)
+			    .attr("orient", "auto")
+			  .append("svg:polyline")
+			    .attr("points", "0,-5 10,0 0,5")
+			    ;
+				
+			// ==================== Add Links ====================
+			var links = svg.selectAll(".link")
+								.data(graph.links)
+								.enter()
+								.append("line")
+									.attr("marker-end", "url(#end)")
+									.attr("class", "link")
+									.attr("stroke-width",2)
+							;//links
+			
+			// ==================== Add Link Names =====================
+			var linkTexts = svg.selectAll(".link-text")
+		                .data(graph.links)
+		                .enter()
+		                .append("text")
+							.attr("class", "link-text")
+							.text( function (d) { return d.predicate; })
+						;
+
+				//linkTexts.append("title")
+				//		.text(function(d) { return d.predicate; });
+						
+			// ==================== Add Link Names =====================
+			var nodeTexts = svg.selectAll(".node-text")
+		                .data(graph.nodes)
+		                .enter()
+		                .append("text")
+							.attr("class", "node-text")
+							.text( function (d) { return d.label; })
+						;
+
+				//nodeTexts.append("title")
+				//		.text(function(d) { return d.label; });
+			
+			// ==================== Add Node =====================
+			var nodes = svg.selectAll(".node")
+								.data(graph.nodes)
+								.enter()
+								.append("circle")
+									.attr("class", "node")
+									.attr("r",8)
+									.call(force.drag)
+							;//nodes
+		
+			// ==================== Force ====================
+			force.on("tick", function() {
+				nodes
+					.attr("cx", function(d){ return d.x; })
+					.attr("cy", function(d){ return d.y; })
+					;
+				
+				links
+					.attr("x1", 	function(d)	{ return d.source.x; })
+			        .attr("y1", 	function(d) { return d.source.y; })
+			        .attr("x2", 	function(d) { return d.target.x; })
+			        .attr("y2", 	function(d) { return d.target.y; })
+			       ;
+				   
+				nodeTexts
+					.attr("x", function(d) { return d.x + 12 ; })
+					.attr("y", function(d) { return d.y + 3; })
+					;
+					
+
+				linkTexts
+					.attr("x", function(d) { return 4 + (d.source.x + d.target.x)/2  ; })
+					.attr("y", function(d) { return 4 + (d.source.y + d.target.y)/2 ; })
+					;
+			});
+			
+			// ==================== Run ====================
+			force
+		      .nodes(graph.nodes)
+		      .links(graph.links)
+			  .charge(-500)
+			  .linkDistance(100)
+		      .start()
+			  ;
+		}
+		
+		
+	
+  	var triples = [
+  			{subject:"bont:Aluminium", 	predicate:"bont:isOutputOf", 	object:"bont:Aluminium production"},
+  			{subject:"bont:Aluminium production", 	predicate:"rdf:type", 		object:"bont:metallurgy"},
+  			{subject:"bont:Aluminium production", 	predicate:"bont:includes", 	object:"bont:slag"},
+  			{subject:"bont:Aluminium production", 	predicate:"bont:includes", 	object:"bont:chilly"},
+  			{subject:"bont:Aluminium", 	predicate:"rdf:type", 	object:"bont:metals"},
+  			{subject:"bont:electricity", 		predicate:"bont:isInputOf", 	object:"bont:Aluminium production"},
+  			{subject:"bont:Aluminium", 		predicate:"bont:isInputOf", 	object:"bont:Car production"}
+  		];
+		
+	var svg = d3.select("#svg_3S_graph").append("svg")
+				.attr("width", 735)
+				.attr("height", 300)
+				;
+				
+	var force = d3.layout.force().size([735, 300]);
+	
+	var graph = triplesToGraph(triples);
+	
+	update();
+	
+  </script>
+    
+
+{% endblock %}
+
+
+
+
+
+
+

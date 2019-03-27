@@ -11,10 +11,23 @@ CREATE TABLE user (
 
 
 CREATE TABLE product(
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    item TEXT NOT NULL,
-    type TEXT NOT NULL,
-    year INTEGER NOT NULL,
-    unit TEXT NOT NULL,
-    location TEXT NOT NULL
+    uri TEXT PRIMARY KEY,
+    name TEXT NOT NULL,
+    activity_code_1 TEXT,
+    activity_code_2 TEXT,
+    introduction TEXT,
+    entityType TEXT,
+    graphdbName TEXT,
+    dataSpace TEXT,
+    abstractField TEXT,
+    creationDate TEXT,
+    sameAs TEXT,
+    industry TEXT,
+    outputOf TEXT,
+    inputOf TEXT,
+    productionVolume INTEGER,
+    productionVolumeUnit TEXT,
+    pedigreeMatrix TEXT,
+    imageUrl TEXT
+
 );
