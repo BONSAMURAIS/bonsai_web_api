@@ -59,7 +59,7 @@
         <div class="row ml-1" id="div_calc_setup" style="display:none;">
             
             <!--<form action="{{ url_for('REST_API.lca_request') }}" method="post">-->
-            <form>
+            <form id="calculation_form">
             <h4>Calculation setup</h4><br>
              <div class="table-responsive">
             <table class="table table-hover" id="table_calculation_setup" style="font-size:12px;">
@@ -121,7 +121,11 @@
         
     </div>
     <div class="col-md-4" id="col_results" style="display:none;">
-         <h4>Results</h4>
+         
+        <div class="row ml-2">
+           <h4>Results</h4> 
+        </div>
+        
         <div class="row ml-2">
            <svg id="graph_1" style="width:600px; height:300px; font-size:16px"></svg>
             
@@ -132,9 +136,11 @@
             <svg id="chart_2" style="width:600px; height:300px; font-size:16px"></svg>
             
         </div>
+        <div class="row ml-2">
+           <h4>Export</h4> 
+        </div>
         
         <div class="row ml-2">
-            <h4>Export</h4>
             <button type="button" class="btn btn-outline-success" style="margin-left:20px;">Inventory as .csv</button>
             <button class="btn btn-outline-success " style="margin-left:20px;">Inventory as .ecospold</button>
             <button class="btn btn-outline-success " style="margin-left:20px;">Results as .csv</button>
@@ -143,15 +149,49 @@
         
         
     </div>
-    
-    
-    
 
-    
 </div>
 </div>
 
+<script>
+$(document).ready(function() {
+        $("#calculation_form").submit(function(e) {
+            e.preventDefault();
+            $("#col_results").show()
+            graph_1();
+            graph_2();
+        });
+    
+/* when the value inside the Search bar is modified, it queries the product database and displays results in the left table */
+        $('#search_input').keyup(function() {
+            var search_val = $(this).val();
+            var search_type = $("#search_type_select").val();
+            var search_lim = $("#search_lim_select").val()
 
+            $.when($.ajax({
+                url: "/rest/products/search_by_"+search_type+"/"+search_val,
+                dataType: 'json',
+                type: 'GET',
+                success : function(data) {
+                   var json = data
+                    return json
+                    },
+                error: function(xhr, status, error){console.log(error)}})
+            ).then(function(json){
+                $("#table_search_results").find("tr:gt(0)").remove();
+                        for (var i = 0; i < json.length; i++) {
+                            var name = json[i]["name"]
+                            var newRowContent = "<tr><td><a id='popoverData' class='btn' href='/product_description/"+json[i]['uri']+"' target='_blank' data-content='"+json[i]["introduction"]+"' rel='popover' data-placement='bottom' data-original-title='"+json[i]['name']+"' data-trigger='hover' style='font-size:12px;'>"+String(json[i]["name"])+"</a></td><td>"+json[i]["uri"]+"</td><td><button class='btn btn-outline-success my-2 my-sm-0' id='"+json[i]["uri"]+"' onclick='add_row_to_table(this)'>Yes</button></td></tr>";
+                            $("#table_search_results tbody").append(newRowContent);  
+                            };
+                        $('#table_search_results a').popover();
+
+            })
+        });
+    
+        
+    }); 
+</script>
 
 {% endblock %}
 

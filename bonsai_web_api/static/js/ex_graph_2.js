@@ -29,7 +29,7 @@ d3.select('#chart_2').datum([
   }
 ,
   {
-    key: "Minim of aluminium ores",
+    key: "Mining of aluminium ores",
     color: "#ff7f0e",
     values:
     [      

@@ -42,6 +42,17 @@
     
     
 </style>
+<script>
+    
+function find_product_page(){
+    var g = $('#search_input').val();
+    var id = $('#json-datalist option[value="' + g +'"]').attr('id');
+    //window.location.href = "{{ url_for('web_app.get_product_description', product_uri=id) }}";
+    window.location.href = "/product_description/"+id;
+}
+    
+       
+</script>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <a class="navbar-brand" href="{{ url_for('web_app.index') }}">
@@ -53,27 +64,10 @@
  
     <ul class="nav navbar-nav mx-auto">
         <form class="form-inline">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search for products" aria-label="Search" id="search_input" style="width:400px;">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search for products" aria-label="Search" id="search_input" style="width:400px;" list="json-datalist">
+            <datalist id="json-datalist"></datalist>                     
             
-            <a class="navbar-brand" href="#">by</a>
-            <ul class="navbar-nav mr-auto">
-                <select class="custom-select" id="search_type_select">
-                    <option value="name" selected>Name</option>
-                    <option value="uri">URI</option>
-                </select>
-            </ul>
-             <a class="navbar-brand" href="#" style="margin-left:10px;" >limited to</a>
-            <ul class="navbar-nav mr-auto">
-                <select class="custom-select" id="search_lim_select">
-                    <option value="10" selected>10</option>
-                    <option value="50">50</option>
-                    <option value="100">100</option>
-                </select>
-            </ul>
-            <a class="navbar-brand" href="#" style="margin-left:10px;">results</a>
-
-            <a class="btn btn-outline-success" href="{{ url_for('web_app.get_product_description') }}" role="button">Contribute with data</a>
-           
+            <button type="button" class="btn btn-outline-success" style="margin-left:20px;" onclick='find_product_page()'>Go</button>
         </form>
     </ul>
     <div class="navbar-collapse collapse w-20 order-3 dual-collapse2">
@@ -122,56 +116,6 @@
     </div> 
 </div>
 
-<script>
-    /* this function displays the table of products to calculate and adds a product row to it */
-function add_row_to_table(btn){
-            $("#div_calc_setup").show();
-            var row_id = btn.id;
-            $("#table_search_results tr").each(function() {
-                if ($(this).find('td').eq(1).text() == row_id){
-                    var tr = $(this).closest("tr").remove().clone();
-                    tr.find('td').eq(2).html("<button class='btn btn-outline-danger my-2 my-sm-0' id='"+tr.find('td').eq(1).text()+"' onclick='remove_row_from_table(this)'>Yes</button>");
-                    $("#table_products_calc tbody").append(tr);
-                    
-                    $.when($.ajax({url: "/rest/products/search_by_uri/"+row_id,dataType: 'json',type: 'GET',success : function(data) {return data
-                    }})).then(function(data)
-                              {var unit =  data[0]["productionVolumeUnit"];
-                                $('#table_calculation_setup > tbody:last-child').append('<tr><td>'+tr.find('td').eq(0).text()+'</td><td><input type="number" id=input_qty_'+row_id+' name="'+row_id+'" required></td><td>'+unit+'</td></tr>');
-                              }); 
-                    };});
-                    /* this loads the select object with available methods */
-                    $.when($.ajax({url: "/rest/methods/",dataType: 'json',type: 'GET',success : function(data) {
-                        return data
-                    }})).then(function(data) {
-                        for (var i = 0; i < data.length; i++) {
-                            var option = new Option(data[i]["name_method"], data[i]["name_method"]); $('#method_type').append($(option));    
-                        };
-                    }); 
-        };
-    
-    
-    /* remove a product row from the table containing products to calculate */
-        function remove_row_from_table(btn){
-            var row_id = btn.id;
-            var name_row;
-            $("#table_products_calc tr").each(function() {
-                if ($(this).find('td').eq(1).text() == row_id){
-                    name_row = $(this).find('td').eq(0).text()
-                    var tr = $(this).closest("tr").remove();
-                };
 
-                });
-            $("#table_calculation_setup tr").each(function() {
-                if ($(this).find('td').eq(0).text() == name_row){
-                    var tr = $(this).closest("tr").remove();
-                };
-
-                });
-        };
-    /* triggers a popover on hovering a product */
-    $('#table_search_results a').popover();
-    
-       
-</script>
 
 </html>
