@@ -13,6 +13,11 @@ bp = Blueprint('web_app', __name__)
 def index():
     return render_template('web_app/index.html', products=json.loads(products_list(10).get_data()))
 
+@bp.route('/widget')
+def widget():
+    return render_template('web_app/index_widget.html')
+
+
 @bp.route('/product_description/')
 @bp.route('/product_description/<path:product_uri>')
 def get_product_description(product_uri=None):
