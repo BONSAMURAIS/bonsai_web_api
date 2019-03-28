@@ -59,7 +59,7 @@
         <div class="row ml-1" id="div_calc_setup" style="display:none;">
             
             <!--<form action="{{ url_for('REST_API.lca_request') }}" method="post">-->
-            <form >
+            <form>
             <h4>Calculation setup</h4><br>
              <div class="table-responsive">
             <table class="table table-hover" id="table_calculation_setup" style="font-size:12px;">
@@ -85,14 +85,20 @@
                         
                      </tr>
                     <tr>
-                       <th>Impact assessment method</th>
-                         <td colspan=2>
+                       <th>Impact assessment method and year</th>
+                         <td>
                             <select id="method_type" name="method_type">
                                 
                             </select>
                          </td>
+                        <td>
+                            <select id="select_year" name="year">
+                                <option value="2011" selected>2011</option>
+                            </select>
+                         </td>
                         
                      </tr>
+                    
                     <tr>
                        <th>Name</th>
                         <th>Quantity</th>
@@ -107,7 +113,7 @@
             </div>
                 
                 <button type="button" class="btn btn-outline-danger" style="margin-left:20px;">Clear selection</button>
-                <button class="btn btn-outline-success my-2 my-sm-0" style="margin-left:20px;" id="calculation_submit">Calculate</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" style="margin-left:20px;"  id="calculation_submit">Calculate</button>
         </form>
         </div>
         
