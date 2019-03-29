@@ -4,33 +4,31 @@ function graph_1(){
 
 
         nv.addGraph(function() {
-        var chart = nv.models.lineChart();
+            var chart = nv.models.lineChart();
 
-        chart.margin({top: 30, right: 60, bottom: 40, left: 80});
+            chart.margin({top: 30, right: 60, bottom: 40, left: 80});
 
-        var datum = data_uncertainty;
-
-
-
-            chart.xAxis
-                .axisLabel("kg CO2-eq.")
-                .tickFormat(d3.format(',r'))
-                .axisLabelDistance(0);
-            
-            chart.yAxis
-                .axisLabel("MC iterations")
-                .tickFormat(d3.format(',.02f'))
-                .axisLabelDistance(15);
-
-          chart.showLegend(true);
-
-            d3.select('#graph_1')
-            .datum(datum)
-            .transition().duration(1000)
-            .attr('width', 400)
-            .attr('height', 400)
-            .call(chart);
+            var datum = data_uncertainty;
 
 
+
+                chart.xAxis
+                    .axisLabel("kg CO2-eq.")
+                    .tickFormat(d3.format(',r'))
+                    .axisLabelDistance(0);
+
+                chart.yAxis
+                    .axisLabel("MC iterations")
+                    .tickFormat(d3.format(',.02f'))
+                    .axisLabelDistance(15);
+
+              chart.showLegend(true);
+
+                d3.select('#graph_1')
+                .datum(datum)
+                .transition().duration(1000)
+                .attr('width', 400)
+                .attr('height', 400)
+                .call(chart);
         });
 };

@@ -2,7 +2,6 @@ from flask import (
     Blueprint, flash, g, redirect, render_template, request, url_for, jsonify
 )
 from werkzeug.exceptions import abort
-from flask_security import login_required 
 from bonsai_web_api.db import get_db
 from bonsai_web_api.REST_API import products_list, products_search_by_id
 import json
