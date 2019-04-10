@@ -39,8 +39,24 @@ Or if you are using the master branch, install Flask from source before installi
     pip install -e .
 
 ## Run
-Linux/MacOS
+### Docker
 
+The application can be run as a doker container.
+Build the image first with:
+
+```
+docker build -t bonsai_web_api .
+```
+
+and then run it with:
+
+```
+docker run --rm -it --name bonsai_web_api -p 5000:5000 bonsai_web_api:latest
+```
+
+
+
+### Native
 Set the environment variables
 
     export FLASK_APP=bonsai_web_api
